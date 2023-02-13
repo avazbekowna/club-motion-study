@@ -1,0 +1,89 @@
+@import "./src/style/variables";
+@import "./src/style/mixin";
+
+
+#aptis {
+  .aptis {
+    &-title {
+      font-weight: 500;
+      font-size: $font-size_h1;
+      text-transform: capitalize;
+      color: #000000;
+    }
+    &-line {
+      width: 129px;
+      height: 4px;
+      background: #6483F6;
+      border-radius: 2px;
+      margin: 8px 0 60px 0;
+    }
+    &-bg {
+      height: 483px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 36px;
+      text-transform: capitalize;
+      color: #002AC0;
+    }
+    &-h2 {
+      margin: 62px 0 16px 0;
+    }
+    p {
+      font-weight: 400;
+      font-size: $font-size20;
+      line-height: 28px;
+      text-transform: capitalize;
+      color: #010D39;
+    }
+    .p-1 {
+      width: 90%;
+    }
+    &-list {
+      @include d-f_fd-c;
+      row-gap: 20px;
+      margin: 26px 0 32px 0;
+      li {
+        font-weight: 500;
+        font-size: $font-size20;
+        text-transform: capitalize;
+        color: #333333;
+
+        &::before {
+          content: "•";
+          color: #333333;
+          display: inline-block;
+          width: .7em;
+        }
+      }
+    }
+    .p-2 {
+      margin: 20px 0 50px 0;
+    }
+    &-list2 {
+      @include d-f_fd-c;
+      row-gap: 20px;
+      margin-bottom: 70px;
+
+      li {
+        @include d-f_al-s;
+        font-weight: 500;
+        font-size: $font-size20;
+        text-transform: capitalize;
+        color: #333333;
+
+        &::before {
+          content: "•";
+          color: #333333;
+          min-width: 16px;
+        }
+      }
+    }
+
+  }
+}

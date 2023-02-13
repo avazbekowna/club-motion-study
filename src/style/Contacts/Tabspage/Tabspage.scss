@@ -1,0 +1,61 @@
+@import "src/style/Contacts/Tabspage/Tabs1/Tabs1";
+@import "src/style/Contacts/Tabspage/Tabs2/Tabs2";
+@import "src/style/Contacts/Tabspage/Tabs3/Tabs3";
+
+
+.tabs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+
+}
+.tabsList{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .tabHead{
+    width: 355px;
+    height: 15px;
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #212121;
+    background: #F5F5F5;
+    border-radius: 5px;
+  }
+}
+.active{
+  background: white;
+  color: blue;
+}
+
+.tabContent{
+  margin-bottom: 200px;
+  //.line-tab{
+  //  width: 395px;
+  //  height: 2px;
+  //  background: #FF6A6A;
+  //  margin-left: -540px;
+  //
+  //}
+  //.line-tab2{
+  //  width: 395px;
+  //  height: 2px;
+  //  background: #FF6A6A;
+  //
+  //}
+  //.line-tab3{
+  //  width: 395px;
+  //  height: 2px;
+  //  background: #FF6A6A;
+  //  margin-left: 810px;
+  //
+  //}
+}

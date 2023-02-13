@@ -1,0 +1,1806 @@
+@import "./src/style/variables";
+@import "./src/style/mixin";
+@import "pages/Discover-more";
+@import "pages/Aptis";
+@import "pages/Other-exams";
+
+// 1) Hero (EXPLORE THE WORLD)
+#hero {
+  margin-bottom: 210px;
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+
+    &-desc {
+      &_subtitle {
+        font-weight: 600;
+        font-size: $font-size24;
+        text-transform: capitalize;
+        color: rgba(86, 9, 187, 0.8);
+      }
+      &_title {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 78px;
+        letter-spacing: 0.04em;
+        color: #000000;
+        margin: 36px 0 17px 0;
+      }
+      p {
+        width: 393px;
+        font-weight: 400;
+        font-size: $font-size18;
+        line-height: 133.34%;
+        letter-spacing: 0.04em;
+        color: #606060;
+      }
+    }
+    &-block {
+      height: 600px;
+      background: linear-gradient(134.3deg, rgba(255, 255, 255, 0.4) 1.2%, rgba(255, 255, 255, 0.1) 100%);
+      backdrop-filter: blur(9.375px);
+      border-radius: 18.75px;
+      position: relative;
+
+      &_sm-img {
+        width: 165px;
+        height: 165px;
+        border-radius: 50%;
+        animation: example 3s linear infinite alternate;
+
+        @keyframes example {
+          to {
+            transform: translateY(0px);
+          }
+          from {
+            transform: translateY(28px);
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .sm-1 {
+        position: absolute;
+        top: 48px;
+        left: 28px;
+      }
+      &_lg-img {
+        width: 302px;
+        height: 302px;
+        border-radius: 50%;
+        animation: example2 3s linear infinite alternate;
+
+        @keyframes example2 {
+          to {
+            transform: translateY(0px);
+          }
+          from {
+            transform: translateY(8px);
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .lg-1 {
+        position: absolute;
+        top: -18px;
+        right: -24px;
+      }
+      .lg-2 {
+        position: absolute;
+        bottom: -18px;
+        left: -24px;
+      }
+      .sm-2 {
+        position: absolute;
+        bottom: 48px;
+        right: 28px;
+      }
+      &_blur-top {
+        width: 80%;
+        height:80%;
+        border-radius: 18.75px 0 88% 0;
+        overflow: hidden;
+        position: relative;
+
+        div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 55%;
+          height: 55%;
+          z-index: -1;
+          background: rgba(255, 71, 71, 0.5);
+          filter: blur(70.3125px);
+        }
+      }
+      &_blur-bottom {
+        width: 80%;
+        height:80%;
+        border-radius: 88% 0 18.75px 0;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        div {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 55%;
+          height: 55%;
+          z-index: -1;
+          background: rgba(86, 9, 187, 0.3);
+          filter: blur(70.3125px);
+        }
+      }
+    }
+    &-contact {
+      @include d-f_al-c;
+      background: $bg-light;
+      box-shadow: -2px 2px 9px 1px rgba(83, 83, 83, 0.25), 2px 6px 5px 1px rgba(178, 178, 178, 0.25);
+      border-radius: 80px;
+      padding: 24px 30px;
+      position: absolute;
+      bottom: -32px;
+      left: 0;
+
+
+      &_group {
+        width: 288px;
+        @include d-f_al-c;
+        column-gap: 16px;
+
+        &-bg {
+          @include alignment-center;
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+          background: #FDE7E9;
+        }
+        &-desc {
+          h5 {
+            font-weight: 400;
+            font-size: $font-size12;
+            color: $color-heading;
+            margin-bottom: 10px;
+          }
+          input {
+            font-weight: 400;
+            font-size: 17px;
+            color: #000000;
+          }
+        }
+      }
+      .group-2 {
+        width: 310px;
+        margin-left: -30px;
+      }
+      &_btn {
+        @include btn-primary;
+        font-weight: 500;
+        font-size: 17px;
+        color: $color-light;
+        padding: 19px 70px;
+      }
+    }
+  }
+}
+
+// 2) About Us (This is why we are
+// best from others)
+#about-us {
+  padding-bottom: 175px;
+
+  .about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60.37px;
+
+    &_desc {
+      &-title {
+        font-weight: 500;
+        font-size: $font-size_h1;
+        line-height: 58px;
+        text-transform: capitalize;
+        color: #212121;
+      }
+      p {
+        font-weight: 400;
+        font-size: $font-size18;
+        line-height: 34px;
+        text-transform: capitalize;
+        color: #010D39;
+        margin: 31px 0 47px 0;
+      }
+      &-bg {
+        width: 95%;
+        height: 310px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          transition: all .5s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    &_blocks {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 35px;
+      row-gap: 44px;
+
+      &-block {
+        padding: 47px 18px 69px 26px;
+        background: $bg-light;
+        box-shadow: 5px 8px 24px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+
+        &_bg {
+          width: 46px;
+          height: 46px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        h4 {
+          font-weight: 500;
+          font-size: $font-size22;
+          text-transform: capitalize;
+          color: #010D39;
+          margin: 25px 0 26px 0;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: $font-size14;
+          line-height: 19px;
+          text-transform: capitalize;
+          color: #001254;
+          text-align: start;
+        }
+      }
+    }
+  }
+}
+
+// 3) Exams (exams)
+#exams {
+  padding-bottom: 204px;
+
+  .exams {
+    &-title {
+      font-weight: 500;
+      font-size: $font-size_h1;
+      text-transform: capitalize;
+      color: $color-heading;
+      text-align: center;
+    }
+
+    &-p {
+      width: 675px;
+      text-align: center;
+      font-weight: 400;
+      font-size: $font-size20;
+      line-height: 24px;
+      color: $color-p;
+      margin: 30px auto 63px auto;
+    }
+
+    &-group {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      column-gap: 135px;
+
+      &_block {
+        background: $bg-light;
+        box-shadow: 5px 8px 24px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+
+        &-bg {
+          height: 320px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        &-desc {
+          padding: 23px 52px 28px 24px;
+
+          &_subtitle {
+            display: inline-block;
+            font-weight: 600;
+            font-size: $font-size16;
+            text-transform: capitalize;
+            color: #002AC0;
+          }
+
+          &_title {
+            font-weight: 500;
+            font-size: $font-size18;
+            color: #001254;
+            margin: 13px 0;
+          }
+
+          p {
+            width: 372px;
+            font-weight: 400;
+            font-size: $font-size12;
+            line-height: 15px;
+            color: #000000;
+            margin-bottom: 13px;
+          }
+
+          &_link {
+            display: block;
+            font-weight: 500;
+            font-size: $font-size14;
+            color: #1AA2EE;
+            text-align: center;
+          }
+        }
+      }
+
+      &_blocks {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 19px;
+
+        &-block {
+          border: 1px solid #BBBBBB;
+          border-radius: 8px;
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          column-gap: 22px;
+          align-items: start;
+          padding: 19px 30px 19px 24px;
+
+          &_bg {
+            height: 132px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          &_desc {
+            &-link {
+              font-weight: 400;
+              font-size: $font-size14;
+              text-transform: capitalize;
+              color: #002AC0;
+              padding: 2px 13px;
+              background: rgba(0, 117, 255, 0.15);
+              border-radius: 4px;
+            }
+
+            h4 {
+              width: 80%;
+              font-weight: 500;
+              font-size: $font-size18;
+              line-height: 22px;
+              color: #001254;
+              margin: 13px 0;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: $font-size12;
+              line-height: 15px;
+              color: #010D39;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 4) Comments (video testimonials from our students)
+#comments {
+  padding-bottom: 260px;
+
+  .comments {
+    &-title {
+      font-weight: 500;
+      font-size: $font-size_h2;
+      text-transform: capitalize;
+      color: #212121;
+      text-align: center;
+      margin-bottom: 111px;
+    }
+
+    .slick-slide > div {
+      margin-right: 40px;
+      width: 570px;
+      height: 340px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .slick-dots {
+      bottom: -34px;
+    }
+
+    .slick-dots li button:before {
+      font-size: 12px;
+      color: blue;
+    }
+  }
+}
+
+// 5) info (Send a message)
+#info {
+  padding-bottom: 265px;
+  position: relative;
+
+  .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+    align-content: center;
+    height: 710px;
+    position: relative;
+    z-index: 19;
+
+    &-form {
+      padding: 44px 43px 31px 43px;
+      background: $bg-light;
+      box-shadow: 5px 8px 26px rgba(86, 9, 187, 0.1);
+
+      &_title {
+        font-weight: 500;
+        font-size: 24px;
+        text-transform: capitalize;
+        color: $color-heading;
+        margin-bottom: 30px;
+      }
+
+      &_group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+                "first-name last-name"
+                "phone email"
+                "last-input last-input";
+        column-gap: 45px;
+        row-gap: 60px;
+
+        input {
+          border-bottom: 2px solid #939393;
+          padding: 10px 0;
+          font-weight: 500;
+          font-size: $font-size16;
+          text-transform: capitalize;
+          color: rgba(135, 135, 135, 1);
+
+          &::placeholder {
+            color: #BBBBBB;
+          }
+        }
+
+        &_last-input {
+          grid-area: last-input;
+        }
+      }
+
+      &_comment {
+        min-width: 100%;
+        min-height: 85px;
+        resize: vertical;
+        overflow: hidden;
+        margin-top: 57px;
+        padding-bottom: 56px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #939393;
+        font-weight: 500;
+        font-size: $font-size16;
+        text-transform: capitalize;
+        color: rgba(135, 135, 135, 1);
+
+        &::placeholder {
+          color: #BBBBBB;
+        }
+      }
+
+      &_btn {
+        @include btn-primary;
+        padding: 19px 72px;
+        font-weight: 500;
+        font-size: 17px;
+        color: $color-light;
+        display: block;
+        margin: 33px auto 0 auto;
+      }
+    }
+    &-address {
+      background: #5609BB;
+      box-shadow: 5px 8px 26px rgba(86, 9, 187, 0.1);
+      padding: 44px 55px;
+      margin-right: 50px;
+
+      h4 {
+        font-weight: 500;
+        font-size: $font-size24;
+        color: $color-light;
+      }
+
+      &_group {
+        @include d-f_al-c;
+        column-gap: 17px;
+        margin: 26px 0 28px 0;
+
+        &-icon {
+          color: $color-light;
+          font-size: 26px;
+        }
+
+        span {
+          font-weight: 400;
+          font-size: $font-size22;
+          color: $color-light;
+        }
+      }
+
+      &_icons {
+        @include d-f_al-c;
+        column-gap: 28px;
+        margin: 50px 0 41px 0;
+
+        &-icon {
+          color: $color-light;
+          font-size: 26px;
+        }
+      }
+
+      &_location {
+        width: 420px;
+        height: 290px;
+
+        iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    &_social-links {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 520px;
+      height: 100%;
+      z-index: -1;
+      border: 2px solid $color-dark;
+
+      &_circle {
+        @include alignment-center;
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        z-index: 20;
+        transform: translateY(-50%);
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #E5EA00;
+
+        &-icon {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  // Modal
+  #social-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 140;
+    min-width: 100vw;
+    min-height: 100vh;
+    background:black;
+    background:rgba(0,0,0,0.8);
+
+    .social-modal {
+      position: fixed;
+      top: 35%;
+      left: 60%;
+      //transform: translate(-50%, -60%);
+      animation: move 3s ;
+      z-index: 152;
+      padding: 40px;
+      background-color: $bg-light;
+      transition: 4s linear;
+      @keyframes move {
+        60%{
+          top: 180px;
+        }
+
+      }
+      h2 {
+        font-weight: 500;
+        font-size: $font-size22;
+        color: $color-heading;
+        text-align: center;
+      }
+      &_icons {
+        @include d-f_al-c;
+        column-gap: 24px;
+        margin: 30px 0 90px 0;
+
+        &-block {
+          @include alignment-center;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+
+          &_icon {
+            color: $color-light;
+            font-size: 24px;
+          }
+        }
+        .whatsapp {
+          background: #0DC143;
+          box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+        }
+        .instagram {
+          background: #d6249f;
+          background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+          box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+        }
+        .facebook {
+          background: #4267B2;
+          box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+        }
+        .telegram {
+          background: #419FD9;
+          box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+        }
+      }
+      &_btn {
+        @include btn-primary;
+        font-weight: 500;
+        font-size: $font-size18;
+        color: $color-light;
+        padding: 18px 70px;
+        display: block;
+        margin: 0 auto;
+      }
+
+    }
+  }
+}
+
+
+
+
+@media (max-width: 1400px) {
+  #info {
+    .info {
+      &_social-links {
+        top: 10px;
+        height: 690px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1200px) {
+  #hero {
+    .hero {
+      &-block {
+        &_lg-img {
+          width: 260px;
+          height: 260px;
+        }
+      }
+    }
+  }
+
+  // 2) About Us (This is why we are
+  // best from others)
+  #about-us {
+    .about-us {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+
+      &_desc {
+        &-title {
+          font-size: 46px;
+        }
+        &-bg {
+          width: 95%;
+          height: 310px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      &_blocks {
+        &-block {
+          padding: 30px 18px 30px 26px;
+        }
+      }
+    }
+  }
+
+  // 4) Comments (video testimonials from our students)
+  #comments {
+    .comments {
+      .slick-slide > div {
+        width: 95%;
+      }
+      .slick-dots {
+        bottom: -14px;
+      }
+      .slick-dots li button:before {
+        font-size: 15px;
+      }
+    }
+  }
+
+  #info {
+    .info {
+      &_social-links {
+        right: -10px;
+        width: 436px;
+        top: 10px;
+        height: 690px;
+      }
+    }
+  }
+
+}
+
+@media  (max-width: 1140px) {
+  // 2) About Us (This is why we are
+  // best from others)
+  #about-us {
+    .about-us {
+      grid-template-columns: 1fr 1fr;
+
+      &_blocks {
+        &-block {
+          padding: 30px 18px 30px 26px;
+        }
+      }
+    }
+  }
+
+  // 3) Exams (exams)
+  #exams {
+    padding-bottom: 204px;
+
+    .exams {
+      &-group {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        column-gap: 100px;
+
+        &_blocks {
+          row-gap: 14px;
+
+          &-block {
+            &_bg {
+              height: auto;
+            }
+            &_desc {
+              h4 {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #info {
+    .info {
+      &-address {
+        width: 93%;
+
+        &_location {
+          width: 100%;
+        }
+      }
+      &_social-links {
+        right: -10px;
+        width: 436px;
+        top: 10px;
+        height: 690px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    .hero {
+      &-desc {
+        &_title {
+          font-size: 50px;
+          line-height: 60px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 149.34%;
+        }
+      }
+      &-block {
+        height: 510px;
+
+        &_lg-img {
+          width: 210px;
+          height: 210px;
+        }
+        &_sm-img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+      &-contact {
+        bottom: -87px;
+      }
+    }
+  }
+
+  // 2) About Us (This is why we are
+  // best from others)
+  #about-us {
+    padding-bottom: 0;
+
+    .about-us {
+      grid-template-columns: 1fr;
+
+      &_desc {
+        &-title {
+          font-size: 40px;
+        }
+        &-bg {
+          width: 100%;
+          height: auto;
+        }
+      }
+      &_blocks {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 48px 0 124px 0;
+
+        &-block {
+          p {
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  // 3) Exams (exams)
+  #exams {
+    padding-bottom: 0;
+
+    .exams {
+      &-title {
+        font-size: 40px;
+      }
+      &-group {
+        grid-template-columns: 1fr;
+
+        &_block {
+          width: 90%;
+          margin: 0 auto;
+          overflow: hidden;
+          border-radius: 15px 15px 0 0;
+
+          &-bg {
+            height: 320px;
+            overflow: hidden;
+
+            img {
+              height: auto;
+            }
+          }
+          &-desc {
+            padding: 23px 52px 28px 24px;
+
+            &_subtitle {
+              display: inline-block;
+              font-weight: 600;
+              font-size: 18px;
+              text-transform: capitalize;
+              color: #002AC0;
+            }
+            &_title {
+              font-weight: 500;
+              font-size: 22px;
+              color: #001254;
+              margin: 18px 0;
+            }
+            p {
+              width: 100%;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 28px;
+              color: #000000;
+              margin-bottom: 16px;
+            }
+            &_link {
+              display: block;
+              font-weight: 500;
+              font-size: 20px;
+              color: #1AA2EE;
+              text-align: center;
+            }
+          }
+        }
+        &_blocks {
+          width: 90%;
+          grid-template-columns: 1fr;
+          row-gap: 24px;
+          margin: 44px auto 124px auto;
+
+          &-block {
+            &_desc {
+              &-link {
+                font-size: 18px;
+                padding: 10px 30px;
+              }
+              h4 {
+                font-size: 22px;
+                line-height: 27px;
+                margin: 24px 0;
+              }
+              p {
+                font-size: 20px;
+                line-height: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 5) info (Send a message)
+  #info {
+    padding-bottom: 140px;
+
+    .info {
+      grid-template-columns: 1fr;
+      height: 1420px;
+
+      &-form {
+        padding: 44px 43px 31px 43px;
+        background: #FFFFFF;
+        box-shadow: -1px 0px 25px 1px rgba(157, 114, 214, 0.1);
+        border-radius: 4px;
+        margin-bottom: 86px;
+
+        &_comment {
+          min-height: 162px;
+          max-height: 162px;
+        }
+      }
+      &-address {
+        width: 92%;
+        margin-right: 40px;
+      }
+      &_social-links {
+        top: 747px;
+        right: 18px;
+        width: 670px;
+        height: 700px;
+        border: 2px solid #ccc;
+
+        &_circle {
+          right: -31px;
+          width: 65px;
+          height: 65px;
+
+          &-icon {
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 994px) {
+  // 4) Comments (video testimonials from our students)
+  #comments {
+    padding-bottom: 80px;
+
+    .comments {
+      .slick-dots {
+        bottom: 37px;
+      }
+      .slick-dots li button:before {
+        font-size: 15px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  // 1) Hero (EXPLORE THE WORLD)
+  #hero {
+    height: 1280px;
+    margin-bottom: 124px;
+
+    .hero {
+      grid-template-columns: 1fr;
+
+      &-desc {
+        &_subtitle {
+          font-size: 18px;
+        }
+        &_title {
+          font-size: 40px;
+          margin: 10px  0;
+        }
+        p {
+          width: 90%;
+        }
+      }
+      &-block {
+        height: 600px;
+        margin: 42px 0 0 0;
+
+        &_sm-img {
+          width: 150px;
+          height: 150px;
+        }
+        &_lg-img {
+          width: 280px;
+          height: 280px;
+        }
+      }
+      &-contact {
+        @include d-f_fd-c;
+        row-gap: 42px;
+        padding: 24px 30px;
+        bottom: -450px;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: -1px 0px 23px 1px rgba(207, 207, 207, 0.2);
+        border-radius: 34px;
+
+
+        &_group {
+          width: 100%;
+
+          &-bg {
+            width: 65px;
+            height: 65px;
+          }
+        }
+        .group-2 {
+          width: 100%;
+          margin: 0;
+        }
+        &_btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // 3) Exams (exams)
+  #exams {
+    padding-bottom: 0;
+
+    .exams {
+      &-title {
+        font-size: 40px;
+      }
+      &-p {
+        width: 100%;
+      }
+      &-group {
+        grid-template-columns: 1fr;
+
+        &_block {
+          &-desc {
+            p {
+              width: 100%;
+              font-size: 16px;
+              line-height: 25px;
+            }
+            &_link {
+              font-size: 16px;
+            }
+          }
+        }
+        &_blocks {
+          width: 90%;
+          grid-template-columns: 1fr;
+          row-gap: 24px;
+          margin: 44px auto 124px auto;
+        }
+      }
+    }
+  }
+
+  // 4) Comments (video testimonials from our students)
+  #comments {
+    padding-bottom: 0;
+    margin-bottom: 140px;
+
+    .comments {
+      height: 460px;
+
+      &-title {
+        font-size: 40px;
+        margin-bottom: 70px;
+      }
+      .slick-slide > div {
+        margin-right: 0;
+        width: 90%;
+        height: 210px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .slick-dots {
+        bottom: -26px;
+      }
+      .slick-dots li button:before {
+        font-size: 10px;
+      }
+    }
+  }
+
+  // 5) info (Send a message)
+  #info {
+    padding-bottom: 140px;
+
+    .info {
+      grid-template-columns: 1fr;
+      height: 1420px;
+
+      &-form {
+        padding: 44px 43px 31px 43px;
+        background: #FFFFFF;
+        box-shadow: -1px 0px 25px 1px rgba(157, 114, 214, 0.1);
+        border-radius: 4px;
+        margin-bottom: 86px;
+
+        &_comment {
+          min-height: 162px;
+          max-height: 162px;
+        }
+      }
+      &-address {
+        width: 90%;
+        margin-right: 40px;
+      }
+      &_social-links {
+        top: 747px;
+        right: 18px;
+        width: 480px;
+        height: 700px;
+        border: 2px solid #ccc;
+
+        &_circle {
+          right: -23px;
+          width: 46px;
+          height: 46px;
+
+          &-icon {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  // 1) Hero (EXPLORE THE WORLD)
+  #hero {
+    height: 1280px;
+    margin-bottom: 124px;
+
+    .hero {
+      &-desc {
+        &_subtitle {
+          font-size: 15px;
+        }
+        &_title {
+          font-size: 36px;
+          margin: 22px 0;
+          line-height: 45px;
+        }
+        p {
+          width: 100%;
+        }
+      }
+      &-block {
+        height: 560px;
+        margin: 70px 0 0 0;
+
+        &_lg-img {
+          width: 240px;
+          height: 240px;
+        }
+      }
+    }
+  }
+
+  // 2) About Us (This is why we are
+  // best from others)
+  #about-us {
+    .about-us {
+      &_desc {
+        &-title {
+          font-size: 36px;
+          line-height: 45px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 29px;
+        }
+      }
+      &_blocks {
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        &-block {
+          width: 80%;
+          padding: 30px 18px 40px 26px;
+        }
+      }
+    }
+  }
+
+  // 3) Exams (exams)
+  #exams {
+    .exams {
+      &-title {
+        font-size: 36px;
+        text-align: start;
+      }
+      &-p {
+        width: 100% !important;
+        text-align: start;
+      }
+      &-group {
+        &_block {
+          width: 100%;
+
+          &-bg {
+            height: 290px;
+          }
+        }
+        &_blocks {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // 4) Comments (video testimonials from our students)
+  #comments {
+    margin-bottom: 80px;
+
+    .comments {
+      height: 460px;
+
+      &-title {
+        font-size: 36px;
+        text-align: start;
+      }
+      .slick-slide > div {
+        width: 96%;
+        height: 280px;
+      }
+    }
+  }
+
+  // 5) info (Send a message)
+  #info {
+    padding-bottom: 140px;
+
+    .info {
+      grid-template-columns: 1fr;
+      height: 1420px;
+
+      &-form {
+        padding: 20px;
+        margin-bottom: 120px;
+
+        &_title {
+          font-size: 22px;
+        }
+        &_group {
+          grid-template-columns: 1fr;
+          grid-template-areas:
+                "first-name"
+                "last-name"
+                "phone"
+                "email"
+                "last-input" !important;
+          row-gap: 50px;
+
+          .input1 {
+            grid-area: first-name;
+          }
+          .input2 {
+            grid-area: last-name;
+          }
+          .input3 {
+            grid-area: phone;
+          }
+          .input4 {
+            grid-area: email;
+          }
+          &_last-input {
+            grid-area: last-input;
+          }
+        }
+      }
+      &-address {
+        margin-right: 0;
+        width: 92%;
+        padding: 40px 30px;
+
+        &_location {
+          width: 100%;
+          height: 260px;
+        }
+      }
+      &_social-links {
+        top: 846px;
+        right: 0;
+        width: 388px;
+        height: 665px;
+
+        &_circle {
+          right: -22px;
+          width: 42px;
+          height: 42px;
+
+          &-icon {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+  // 1) Hero (EXPLORE THE WORLD)
+  #hero {
+    height: 1160px;
+
+    .hero {
+      &-desc {
+        &_subtitle {
+          font-size: 13px;
+        }
+        &_title {
+          font-size: 30px;
+          margin: 20px 0;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      &-block {
+        height: 495px;
+
+        &_lg-img {
+          width: 190px;
+          height: 190px;
+        }
+        .lg-1 {
+          top: -24px;
+          right: -5px;
+        }
+        .lg-2 {
+          bottom: -24px;
+          left: -10px;
+        }
+        &_sm-img {
+          width: 130px;
+          height: 130px;
+        }
+      }
+    }
+  }
+
+  // 2) About Us (This is why we are
+  // best from others)
+  #about-us {
+    .about-us {
+      &_desc {
+        &-title {
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+      &_blocks {
+        &-block {
+          width: 100%;
+
+          p {
+            width: 90%;
+            font-size: 16px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  // 3) Exams (exams)
+  #exams {
+    .exams {
+      &-title {
+        font-size: 30px;
+      }
+      &-p {
+        font-size: 16px;
+        line-height: 23px;
+        margin: 16px auto 26px auto;
+      }
+      &-group {
+        &_blocks {
+          &-block {
+            &_desc {
+              h4 {
+                width: 100%;
+                line-height: 23px;
+              }
+              p {
+                font-size: 16px;
+                line-height: 23px;
+              }
+            }
+            &_bg {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 4) Comments (video testimonials from our students)
+  #comments {
+    margin-bottom: 80px;
+
+    .comments {
+      &-title {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 55px;
+      }
+      .slick-slide > div {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // 5) info (Send a message)
+  #info {
+    padding-bottom: 170px;
+
+    .info {
+
+      &-address {
+        width: 90%;
+
+        h4 {
+          font-size: 20px;
+        }
+        &_group {
+          column-gap: 14px;
+          &-icon {
+            font-size: 20px;
+          }
+          span {
+            font-size: 16px;
+          }
+        }
+        &_icons {
+          margin: 35px 0;
+        }
+        &_location {
+          width: 90%;
+          height: 300px;
+        }
+      }
+      &_social-links {
+        width: 420px;
+        right: 8px;
+
+        &_circle {
+          right: -29px;
+          width: 55px;
+          height: 55px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  // 1) Hero (EXPLORE THE WORLD)
+  #hero {
+    height: 1140px;
+
+    .hero {
+      &-block {
+        height: 390px;
+
+        &_lg-img {
+          width: 155px;
+          height: 155px;
+        }
+        &_sm-img {
+          width: 116px;
+          height: 116px;
+        }
+        &_blur-top {
+          width: 70%;
+          height: 70%;
+        }
+        &_blur-bottom {
+          width: 70%;
+          height: 70%;
+        }
+      }
+    }
+  }
+
+  // 2) About Us (This is why we are
+  // best from others)
+  #about-us {
+    .about-us {
+      &_blocks {
+        &-block {
+          display: grid;
+          grid-template-columns: 1fr 4.1fr;
+          column-gap: 18px;
+          grid-template-areas:
+                  "icon text"
+                  "paragraph paragraph";
+          align-items: center;
+
+          &_bg {
+            width: 60px;
+            height: 60px;
+          }
+          p {
+            grid-area: paragraph;
+            width: 100%;
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  // 3) Exams (exams)
+  #exams {
+    .exams {
+      &-group {
+        &_block {
+          &-bg {
+            border-radius: 12px 12px 0 0;
+            overflow: hidden;
+          }
+        }
+        &_blocks {
+          &-block {
+            position: relative;
+            overflow: hidden;
+            padding-top: 225px;
+            grid-template-columns: 1fr;
+
+            &_desc {
+              &-link {
+                font-size: 16px;
+                padding: 8px 26px;
+              }
+              h4 {
+                margin: 18px 0;
+              }
+            }
+            &_bg {
+              position: absolute;
+              top: -8px;
+              left: 0;
+              width: 100%;
+              height: 200px;
+              overflow: hidden;
+
+              img {
+                width: 100%;
+                height: auto;
+                background-size: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 5) info (Send a message)
+  #info {
+    padding-bottom: 170px;
+
+    .info {
+      height: auto;
+
+      &-address {
+        h4 {
+          font-size: 20px;
+        }
+        &_group {
+          column-gap: 14px;
+          &-icon {
+            font-size: 20px;
+          }
+          span {
+            font-size: 16px;
+          }
+        }
+        &_icons {
+          margin: 35px 0;
+        }
+        &_location {
+          width: 100%;
+          height: 260px;
+        }
+      }
+      &_social-links {
+        width: 300px;
+        right: 2px;
+        top: 904px;
+        height: 612px;
+
+        &_circle {
+          right: -22px;
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 400px) {
+  // 3) Exams (exams)
+  #exams {
+    .exams {
+      &-group {
+        &_block {
+          &-bg {
+            height: 230px;
+
+            img {
+              height: auto;
+            }
+          }
+        }
+        &_blocks {
+          &-block {
+            padding-top: 200px;
+
+            &_bg {
+              height: 180px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 385px) {
+  // 1) Hero (EXPLORE THE WORLD)
+  #hero {
+    height: 1090px;
+
+    .hero {
+      &-contact {
+        bottom: -380px;
+
+        &_group {
+          &-bg {
+            width: 54px;
+            height: 54px;
+          }
+        }
+        &_btn {
+          width: 100%;
+          padding: 15px 0;
+        }
+      }
+    }
+  }
+
+  // 5) info (Send a message)
+  #info {
+    .info {
+      &-form {
+        &_btn {
+          padding: 14px 72px;
+        }
+        &_comment {
+          min-height: 158px;
+          max-height: 158px;
+        }
+      }
+      &-address {
+        &_location {
+          height: 230px;
+        }
+      }
+      &_social-links {
+        width: 270px;
+        right: 4px;
+        top: 893px;
+        height: 572px;
+
+        &_circle {
+          right: -19px;
+          width: 38px;
+          height: 38px;
+
+          &-icon {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+}
+

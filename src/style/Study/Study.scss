@@ -1,0 +1,80 @@
+.study-abroad{
+  margin-bottom: 200px;
+  h1{
+
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .border{
+    border: 1px solid #6483F6;
+    width: 140px;
+    border-radius: 2px;
+
+  }
+  .content-study{
+    display: flex ;
+    //align-items: center;
+    justify-content: space-between;
+    .study-img{
+      margin-top: 150px;
+      position: relative;
+      img{
+        z-index: 1;
+      }
+      .border-img{
+        border: 3px solid #212121;
+        opacity: 0.8;
+        z-index: -1;
+        position: absolute;
+        width: 370px;
+        height: 370px;
+        left: 56px;
+        top: -33px;
+        color: #212121;
+      }
+    }
+    .study-info{
+      margin-top: 30px;
+      p{
+        width: 563px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 142.84%;
+        color: #010D39;
+        span{
+          font-weight: bolder;
+        }
+      }
+      .info-our{
+        margin-top: 58px;
+        h2{
+          font-weight: bolder;
+          color: #010D39;
+          font-size: 22px;
+          margin-bottom: 8px;
+        }
+        p{
+          width: 579px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 182.84%;
+        }
+
+      }
+      .button-study{
+        margin-top: 35px;
+        button{
+          width: 200px;
+          height: 59px;
+          background: #109FEF;
+          border: none;
+          border-radius: 80px;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+
+      }
+    }
+  }
+}

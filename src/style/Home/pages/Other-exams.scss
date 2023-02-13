@@ -1,0 +1,85 @@
+@import "./src/style/variables";
+@import "./src/style/mixin";
+
+#other-exams {
+  .other-exams {
+    &_title {
+      font-weight: 500;
+      font-size: $font-size_h1;
+      text-transform: capitalize;
+      color: $color-heading;
+    }
+    &_line {
+      width: 129px;
+      height: 4px;
+      background: #6483F6;
+      border-radius: 2px;
+      margin: 8px 0 60px 0;
+    }
+    &_bg {
+      height: 483px;
+      margin-bottom: 63px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 36px;
+      text-transform: capitalize;
+      color: #002AC0;
+    }
+    p {
+      width: 93%;
+      font-weight: 500;
+      font-size: $font-size20;
+      line-height: 28px;
+      text-transform: capitalize;
+      color: #010D39;
+      margin: 16px 0 22px 0;
+    }
+    &_list {
+      @include d-f_fd-c;
+      row-gap: 20px;
+
+      li {
+        @include d-f_al-s;
+        font-weight: 400;
+        font-size: $font-size20;
+        line-height: 28px;
+        text-transform: capitalize;
+        color: #333333;
+
+        &::before {
+          content: "•";
+          color: #333333;
+          min-width: 16px;
+        }
+      }
+      li.title {
+        font-weight: 500;
+        font-size: $font-size20;
+        text-transform: capitalize;
+        color: #333333;
+      }
+      li.bold {
+        font-weight: 500;
+        font-size: $font-size20;
+        line-height: 28px;
+        text-transform: capitalize;
+        color: #333333;
+      }
+    }
+    .list-1 {
+      margin: 20px 0 71px 0;
+    }
+    .list-2 {
+      margin: 20px 0 71px 0;
+    }
+    .list-3 {
+      margin: 48px 0 211px 0;
+    }
+
+  }
+}

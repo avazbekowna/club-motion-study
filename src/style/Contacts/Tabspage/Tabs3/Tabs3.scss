@@ -1,0 +1,12 @@
+#images{
+  width: 1196px;
+  margin-top: 80px;
+  .photo{
+
+    display: grid;
+    grid-template-columns: 410px 410px 0  ;
+    img{
+      margin-bottom: 60px;
+    }
+  }
+}

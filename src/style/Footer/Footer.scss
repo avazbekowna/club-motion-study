@@ -1,0 +1,85 @@
+@import "./src/style/variables";
+@import "./src/style/mixin";
+
+#footer {
+  background: $bg-dark;
+  padding: 75px 0 35px 0;
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    grid-template-areas:
+            "logo navbar icons"
+            "line line line"
+            "copyright copyright copyright";
+
+    &-nav {
+      @include d-f_al-c;
+      column-gap: 65px;
+      justify-content: center;
+
+      &_item {
+        font-weight: 500;
+        font-size: $font-size16;
+        text-transform: capitalize;
+        color: $color-light;
+      }
+    }
+    &-icons {
+      @include d-f_al-c;
+      column-gap: 30px;
+      justify-content: end;
+
+      &_icon {
+        color: $color-light;
+        font-size: 26px;
+      }
+    }
+    &-line {
+      grid-area: line;
+      height: 4px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      margin: 38px 0 18px 0;
+    }
+    &-copyright {
+      grid-area: copyright;
+      text-align: center;
+
+      span {
+        text-align: center;
+        font-weight: 500;
+        font-size: $font-size14;
+        text-transform: capitalize;
+        color: $color-light;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #footer {
+    .footer {
+      grid-template-areas:
+            "logo logo icons"
+            "line line line"
+            "copyright copyright copyright";
+
+      &-nav {
+        display: none;
+      }
+      &-icons {
+        grid-area: icons;
+        &_icon {
+          font-size: 30px;
+        }
+      }
+      &-copyright {
+        grid-area: copyright;
+        text-align: start;
+      }
+    }
+  }
+
+}
