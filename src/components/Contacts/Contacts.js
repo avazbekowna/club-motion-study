@@ -4,7 +4,7 @@ import Contact_hero from "./Contact_hero/Contact_hero";
 
 const Contacts = () => {
     return (
-        <div>
+        <div className="wrapper">
             <Contact_hero/>
             <Tabspage/>
         </div>

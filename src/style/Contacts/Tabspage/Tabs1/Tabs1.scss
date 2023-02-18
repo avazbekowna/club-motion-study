@@ -1,3 +1,6 @@
+
+@import "./src/style/variables";
+@import "./src/style/mixin";
 #description{
   margin-top: 150px;
   width: 1196px;
@@ -438,8 +441,18 @@
             font-size: 40px;
           }
           .icon2{
-            color: #f10bc2;
-            font-size: 40px;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            box-shadow: 0 3px 10px rgb(0 0 0 / 25%);
+            font-size: 20px;
+            margin: 10px 20px 20px 20px;
+            padding: 10px;
+            color: $color-light;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+
+
+
           }
           .icon3{
             color: cornflowerblue;

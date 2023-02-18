@@ -1,2 +1,768 @@
 @import "src/style/Contacts/Tabspage/Tabspage";
 @import "src/style/Contacts/Contacts_hero/Contacts_hero";
+
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .tabContent .line-tab {
+    width: 356px;
+    margin-left: 60px;
+  }
+  .tabContent .line-tab2 {
+    width: 356px;
+    margin-left: 350px;
+  }
+  .tabContent .line-tab3 {
+    width: 356px;
+    margin-left: 777px;
+  }
+
+  .tabsList .tabHead {
+    width: 311px;
+  }
+  #description .big-dec .apply {
+    width: 444px;
+    margin-right: 60px;
+  }
+  #description .big-dec--first .description {
+    margin-left: 80px;
+  }
+  #description .big-dec--first--ect {
+    margin-top: -50px;
+    margin-left: 80px;
+  }
+  #description .big-dec--first--ect .awards p {
+    margin-right: 112px;
+  }
+  #description .big-dec--first--ect .line-dec {
+    width: 514.01px;
+  }
+  #description .big-dec--first--ect .line-dec2 {
+    width: 514.01px;
+  }
+  .photo img{
+    width: 320px;
+  }
+  #cost .cost {
+    margin-top: 55px;
+    margin-right: 82px;
+  }
+  #images .photo {
+    grid-template-columns: 370px 370px 0;
+    margin-left: 6px;
+  }
+
+
+}
+
+@media (max-width: 1024px) {
+
+  .tabContent .line-tab {
+    width: 310px;
+    margin-left: 43px;
+  }
+  .tabContent .line-tab2 {
+    width: 310px;
+    margin-left: 270px;
+  }
+  .tabContent .line-tab3 {
+    width: 310px;
+    margin-left: 670px;
+  }
+
+
+
+  .photo-hero img{
+    width: 500px;
+    height: 570px;
+  }
+  .blocks{
+    margin-left: 60px;
+  }
+  #university .university--block .blocks--location {
+    width: 371px;
+  }
+  #university .university--block .blocks--type {
+    width: 371px;
+
+  }
+  #university .university--block .blocks--location h1 span {
+    font-size: 17px!important;
+  }
+  #university .university--block .blocks--type h1 {
+    font-size: 16px;
+  }
+  #university .university--block .blocks--type span {
+    font-size: 15px;
+  }
+  #university .university--block .blocks--type p {
+    font-size: 15px;
+    margin-left: 198px;
+  }
+  #university .university--block .blocks--location h1 {
+    font-size: 15px;
+  }
+  #university .university--block .blocks--fashion {
+    width: 377px;
+  }
+  #university .university--block .blocks--fashion h2 {
+    font-size: 15px;
+  }
+  #university .university--block .blocks--fashion span {
+    font-size: 18px;
+  }
+  #university .university--block .blocks--fashion--design p {
+    font-size: 15px;
+    margin-left: 164px;
+  }
+  .tabsList .tabHead {
+    width: 265px;
+  }
+
+  #description .big-dec--first--ect h1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #010D39;
+  }
+  #description .big-dec--first--ect .awards h1 {
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .awards p {
+    margin-right: 165px!important;
+  }
+  #description .big-dec .apply--line {
+    width: 319.02px;
+  }
+  #description .big-dec--first .description .lands h1 {
+    font-size: 18px;
+    margin-left: -100px;
+  }
+  #description .big-dec--first .description .lands p {
+    font-size: 17px;
+    width: 299px;
+    margin-left: -175px;
+  }
+  #description .big-dec .apply--now {
+    width: 311px;
+    height: 58px;
+
+  }
+  #description .big-dec .apply {
+    width: 376px;
+    margin-right: 133px;
+  }
+  #description .big-dec--first .description .lands h1 {
+    font-size: 22px;
+  }
+  #description .big-dec--first .description .lands p {
+    font-size: 17px;
+    width: 252px;
+  }
+  .photo-tabs{
+    margin-left: 60px;
+  }
+  #description .big-dec--first--ect {
+    margin-left: 141px;
+  }
+  #description .big-dec--first--ect .awards p {
+    margin-right: 79px;
+  }
+  .application--block2{
+    margin-left: 50px;
+  }
+  #cost .cost h1 {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  #images .photo {
+    grid-template-columns: 330px 330px 0;
+    margin-left: 123px;
+  }
+  .photo img{
+    width: 280px;
+  }
+
+  #description {
+    width: 1024px;
+  }
+  #description .big-dec--first--ect {
+    margin-left: 65px;
+  }
+  .photo-tabs {
+    margin-left: -25px;
+  }
+  #description .big-dec--first--ect .awards p {
+    margin-right: 131px;
+  }
+  #description .big-dec .apply--now2 {
+    width: 311px;
+    height: 64px;
+
+  }
+  #images .photo {
+    grid-template-columns: 330px 330px 0;
+    margin-left: 74px;
+  }
+  #images {
+    width: 1024px;
+    margin-top: 80px;
+  }
+  #images .photo {
+    grid-template-columns: 330px 330px 0;
+    margin-left: -10px;
+  }
+  #description .big-dec--first--ect .application--block2 h2 {
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .application--block2 h2 span {
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .application--block2 h3 {
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .application--block2 h3 span {
+
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .application--block2 h4 {
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .application--block2 h5 {
+    font-size: 18px;
+    line-height: 29px;
+    margin-top: 22px;
+  }
+  #description .big-dec--first--ect .application--block2 .semester {
+    width: 278.06px;
+  }
+  #description .big-dec--first--ect .line-dec2 {
+    width: 464.01px;
+  }
+  #description .big-dec .apply {
+    margin-left: -89px;
+  }
+  #description .big-dec .apply {
+    margin-left: -89px;
+    margin-top: -530px;
+  }
+  #description .big-dec--first--ect .application--block1 {
+    margin-top: -126px;
+  }
+  #description .big-dec--first .description .lands p {
+    font-size: 17px;
+    width: 248px;
+    margin-left: -102px;
+  }
+  #description .big-dec--first .description {
+    justify-content: space-evenly;
+    margin-left: -8px;
+  }
+  #description .big-dec--first--ect .line-dec {
+    width: 471.01px;
+  }
+  #description .big-dec--first--ect .application--block1 h2 {
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .application--block1 h3 {
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .application--block1 h4 {
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .entry-block--high2 h2 {
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .entry-block--high2 h3 {
+    width: 285px;
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .entry-block--high2 h2 {
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .entry-block--high2 .sem2 {
+    width: 273.06px;
+  }
+  #description .big-dec--first--ect .entry-block--high1 h2 {
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .entry-block--high1 h3 {
+    font-size: 18px;
+    width: 100px;
+  }
+  #description .big-dec--first--ect .entry-block--high2 h4 {
+    width: 274px;
+    font-size: 18px;
+  }
+
+  #description .big-dec .apply--pre--block2 h2 {
+    font-size: 18px;
+  }
+  #description .big-dec .apply--pre--block2 h2 span{
+    font-size: 18px;
+  }
+  #description .big-dec .apply--pre--block2 h3 {
+    font-size: 18px;
+  }
+  #description .big-dec .apply--pre--block2 h3 span {
+    font-size: 18px;
+  }
+  #description .big-dec .apply--pre--block2 h5 {
+    font-size: 18px;
+  }
+  #description .big-dec .apply--pre--block2 h6 {
+    font-size: 18px;
+  }
+  #description .big-dec .apply--pre--block2 h4 {
+    font-size: 18px;
+  }
+  #description .big-dec .apply--pre--block2 h1 {
+    font-size: 18px;
+  }
+  #description .big-dec .apply--now2 {
+    font-size: 18px;
+  }
+  #description .big-dec .apply--error h1 {
+    font-size: 18px;
+  }
+  #description .big-dec .apply--error h2 {
+    font-size: 18px;
+    margin-right: 93px;
+  }
+  #description .big-dec .apply--error h2 span{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #description .big-dec--first {
+    margin-top: -150px!important;
+    margin-left: 70px;
+  }
+  .tabContent .line-tab {
+    width: 225px;
+    margin-left: 43px;
+  }
+  .tabContent .line-tab2 {
+    width: 225px;
+    margin-left: 270px;
+  }
+  .tabContent .line-tab3 {
+    width: 225px;
+    margin-left: 630px;
+  }
+
+  #university .university--block {
+    align-items: center;
+    flex-direction: column;
+  }
+  #description .big-dec {
+    flex-direction: column;
+    align-items: center;
+  }
+  #description .big-dec .apply {
+    margin-left: -89px;
+    margin-top: 45px;
+  }
+  #description {
+    width: 768px;
+    height: 2340px;
+  }
+  .tabsList .tabHead {
+    width: 180px;
+    font-size: 18px;
+  }
+  .tabsList .tabHead {
+    width: 180px;
+    height: 1px;
+
+    font-size: 18px;
+  }
+  .blocks {
+    margin-left: 8px;
+    margin-top: 70px;
+  }
+  .tabsList .tabHead p{
+    margin-top: -10px;
+  }
+  #description .big-dec--first {
+    margin-top: -200px;
+    margin-left: 70px;
+  }
+  #description .big-dec .apply {
+    margin-right: -100px;
+  }
+  #cost .cost h1 span {
+    font-size: 19px;
+  }
+  #cost .cost h1 {
+    margin-left: 54px;
+  }
+  #cost .cost p {
+    font-size: 18px;
+    line-height: 31px;
+    margin-top: -30px;
+    margin-left: 52px;
+  }
+  .photo img {
+    width: 207px;
+  }
+  #images .photo {
+    grid-template-columns: 240px 240px 0;
+    margin-left: 112px;
+    margin-top: -43px;
+  }
+  #images .photo img {
+    margin-bottom: 35px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  #description .big-dec--first {
+    margin-top: -141px !important;
+    margin-left: 70px;
+  }
+  .tabContent .line-tab {
+    width: 165px;
+    margin-left: 38px;
+    margin-top: -50px;
+  }
+  .tabContent .line-tab2 {
+    width: 165px;
+    margin-left: 200px;
+    margin-top: -50px;
+  }
+  .tabContent .line-tab3 {
+    width: 165px;
+    margin-left: 598px;
+    margin-top: -50px;
+  }
+
+  #description {
+    width: 576px;
+  }
+  .tabsList .tabHead {
+    width: 120px;
+    height: 1px;
+    font-size: 15px;
+    margin-top: -150px;
+  }
+  #description .big-dec--first .description {
+    margin-top: 40px;
+  }
+  #images .photo {
+     grid-template-columns: 180px 180px 0;
+     margin-left: 206px;
+     margin-top: -43px;
+   }
+  .photo-tabs {
+    margin-left: -3px;
+  }
+  #description .big-dec--first .description .lands h1 {
+    font-size: 18px;
+  }
+  .photo img {
+    width: 140px;
+  }
+  .photo-hero img {
+    width: 400px;
+    height: 400px;
+  }
+  #university .university--title {
+    font-size: 31px;
+    margin-bottom: 50px;
+  }
+}
+
+@media(max-width: 500px) {
+  #images .photo {
+    margin-top: -52px!important;
+  }
+  #cost .cost h1 {
+    margin-left: 54px;
+    margin-top: -37px;
+  }
+  .tabContent .line-tab {
+    width: 150px;
+    margin-left: 155px;
+    margin-top: -50px;
+  }
+  .tabContent .line-tab2 {
+    width: 150px;
+    margin-left: 175px;
+  }
+  .tabContent .line-tab3 {
+    width: 150px;
+    margin-left: 590px;
+  }
+
+  .tabsList .tabHead {
+    width: 105px;
+    font-size: 11px;
+  }
+  .photo-tabs {
+    margin-top: -180px;
+    margin-left: 35px;
+  }
+  #description .big-dec--first .description .lands h1 {
+    font-size: 18px;
+    margin-top: -125px;
+  }
+  .application--block2 {
+    margin: 38px 200px 0 0;
+  }
+  #description .big-dec--first--ect .application--block1 {
+    margin-top: -181px;
+    margin-left: 193px;
+  }
+  #description .big-dec--first--ect .application--block2 h2 {
+    font-size: 18px;
+    margin-left: -142px;
+    margin-top: 8px;
+  }
+  #description .big-dec--first--ect .application--block1 h4 {
+    margin-top: 117px;
+    font-size: 18px;
+  }
+  #description .big-dec--first--ect .application--block2 .semester {
+    margin-left: -142px;
+    width: 342px;
+    margin-top: 29px;
+  }
+  #description .big-dec--first--ect .application--block2 h5 {
+    margin-top: 4px;
+    margin-left: -141px;
+  }
+  #description .big-dec--first--ect .application--block2 h4 {
+    font-size: 18px;
+    margin-top: 101px;
+    margin-left: -141px;
+  }
+  #description .big-dec--first--ect .line-dec {
+    width: 344px;
+    margin-left: 188px;
+    margin-bottom: 20px;
+  }
+  #description .big-dec--first--ect .line-dec2 {
+    width: 342px;
+    margin-left: 189px;
+  }
+  #description .big-dec--first--ect .entry-block--high2 .sem2 {
+    width: 342.06px;
+    margin-left: -270px;
+  }
+  #description .big-dec--first--ect .application--block2 h4 {
+    font-size: 18px;
+    margin-top: 86px;
+  }
+  #description .big-dec--first--ect .application--block1 h3 {
+    font-size: 18px;
+    margin-top: 154px;
+  }
+  .photo-tabs {
+    margin-top: -180px;
+    margin-left: 68px;
+  }
+  #description .big-dec--first .description .lands p {
+    font-size: 17px;
+    width: 248px;
+    margin-left: -175px;
+  }
+  #description .big-dec--first .description .lands h1 {
+    margin-left: -175px;
+    margin-top: -126px;
+
+    #description .big-dec--first--ect .application--block2 h3 {
+      margin-left: -141px;
+      margin-top: 101px;
+    }
+
+
+    #description .big-dec--first .description .lands h1 {
+      margin-left: -99px;
+      margin-top: -126px;
+    }
+
+
+  }
+  #description .big-dec--first--ect h1 {
+    margin-left: 188px;
+    width: 200px;
+  }
+  #description .big-dec--first--ect h1 span {
+    font-size: 18px;
+    margin: 8px;
+  }
+  #description .big-dec--first--ect .awards {
+    flex-direction: column;
+  }
+  #description .big-dec--first--ect .awards h1 {
+    margin-top: 59px;
+    margin-left: -235px;
+  }
+  #description .big-dec--first--ect .awards p {
+    margin-left: 115px;
+    margin-top: -90px;
+  }
+  #description .big-dec--first--ect h1 {
+    margin-left: 199px;
+    width: 200px;
+  }
+  #description .big-dec--first--ect {
+    margin-left: -30px;
+  }
+  .erko{
+    margin-top: 100px;
+  }
+  #description .big-dec--first--ect .awards p {
+    margin-right: 131px;
+    padding-right: 122px;
+  }
+  #description .big-dec--first--ect .application--block2 h3 {
+    margin-top: 118px;
+    margin-left: -142px;
+  }
+
+  #description .big-dec--first--ect .entry-block {
+
+    margin-right: 100px;
+    flex-direction: column;
+  }
+  #description .big-dec--first--ect .entry-block--high2 h2 {
+    margin-top: -300px;
+    margin-left: -20px;
+  }
+  #description .big-dec--first--ect .entry-block--high2 h3 {
+    margin-left: -20px;
+  }
+  #description .big-dec--first--ect .entry-block--high2 h4 {
+    margin-top: 91px;
+    margin-left: -17px;
+  }
+  #description {
+    width: 768px;
+    height: 2459px;
+  }
+  #description .big-dec--first--ect .entry-block--high2 .sem2 {
+    width: 342.06px;
+    margin-left: -25px;
+  }
+  #description .big-dec--first--ect .entry-block--high1 h3 {
+    font-size: 18px;
+    width: 100px;
+    margin-right: 249px;
+  }
+  #description .big-dec--first--ect .entry-block--high1 h2 {
+    margin-top: 200px;
+    margin-left: -4px;
+  }
+  #cost .cost h1 {
+    margin-left: 54px;
+    margin-top: -87px;
+  }
+  #images .photo {
+    grid-template-columns: 200px 200px;
+    margin-left: 289px;
+    margin-top: -43px;
+  }
+  .photo img {
+    width: 200px;
+  }
+  #images .photo {
+    grid-template-columns: 245px 245px;
+    margin-left: 240px;
+    margin-top: -98px;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .tabContent .line-tab {
+    width: 123px;
+    margin-left: 195px;
+  }
+  .tabContent .line-tab2 {
+    width: 123px;
+    margin-left: 140px;
+  }
+  .tabContent .line-tab3 {
+    width: 123px;
+    margin-left: 580px;
+  }
+  #images .photo {
+    grid-template-columns: 190px 190px;
+    margin-left: 285px;
+    margin-top: -98px;
+  }
+  .photo img {
+    width: 161px;
+  }
+  #cost .cost {
+    margin-top: 110px;
+    margin-right: 82px;
+  }
+  .photo-hero img {
+    width: 370px;
+    height: 400px;
+  }
+  .photo-tabs img{
+    width: 100px;
+  }
+  #description .big-dec--first .description .lands p {
+    margin-left: -228px;
+    width: 200px;
+  }
+  #description .big-dec--first .description .lands h1 {
+     line-height: 20px;
+     margin-left: -228px!important;
+     margin-top: -110px;
+   }
+
+  #description .big-dec--first--ect {
+    margin-left: 17px;
+  }
+  .tabsList .tabHead {
+    width: 79px;
+    font-size: 11px;
+  }
+  .photo-tabs {
+    margin-top: -180px;
+    margin-left: 53px;
+  }
+  #description .big-dec--first--ect h1 {
+    margin-left: 199px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 375px) {
+  .photo-hero img {
+    width: 339px;
+    height: 359px;
+  }
+  #university .university--block .blocks--location {
+    width: 335px;
+    margin-left: -3px;
+  }
+  #university .university--block .blocks--type {
+    width: 335px;
+    margin-left: -3px;
+  }
+  #university .university--block .blocks--type span {
+  }
+  #university .university--block .blocks--fashion {
+    width: 341px;
+  }
+
+}
+@media (max-width: 320px) {
+
+}
+

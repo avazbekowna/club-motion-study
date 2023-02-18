@@ -10,14 +10,16 @@ const Tabs3 = () => {
         <>
 
            <div id="images">
-              <div className="photo">
-                  <img src={pho1} alt=""/>
-                  <img src={pho2} alt=""/>
-                  <img src={pho3} alt=""/>
-                  <img src={pho4} alt=""/>
-                  <img src={pho5} alt=""/>
-                  <img src={pho6} alt=""/>
-              </div>
+             <div className="container">
+                 <div className="photo">
+                     <img src={pho1} alt=""/>
+                     <img src={pho2} alt=""/>
+                     <img src={pho3} alt=""/>
+                     <img src={pho4} alt=""/>
+                     <img src={pho5} alt=""/>
+                     <img src={pho6} alt=""/>
+                 </div>
+             </div>
            </div>
         </>
     );

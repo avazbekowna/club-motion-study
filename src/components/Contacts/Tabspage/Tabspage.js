@@ -9,28 +9,27 @@ function Tabspage () {
     return (
         <div className="tabs">
             <div className="tabsList">
-                <div className={`tabHead ${index ===0? 'active': null}`}  onClick={() =>{setIndex(0)}}>
-                    Description
+                <div className={`tabHead ${index ===0}`}  onClick={() =>{setIndex(0)}}>
+                    <p>Description</p>
 
                 </div>
 
 
-                <div className={`tabHead ${index ===1? 'active': null}`} onClick={() =>{setIndex(1)}}>
-                    Cost
-
+                <div className={`tabHead ${index ===1}`} onClick={() =>{setIndex(1)}}>
+                   <p> Cost</p>
                 </div>
 
-                <div className={`tabHead ${index ===2? 'active': null}`} onClick={() =>{setIndex(2)}}>
-                    Photo
+                <div className={`tabHead ${index ===2}`} onClick={() =>{setIndex(2)}}>
+                    <p>Photo</p>
 
                 </div>
             </div>
 
             <div className="tabContent" hidden={index !== 0}>
-                <div className="line-tab"></div>
+                <div className="line-tab" hidden={index !== 0}></div>
                 <Tabs1/>
-
             </div>
+
             <div className="tabContent" hidden={index !== 1}>
                 <div className="line-tab2"></div>
                 <Tabs2/>

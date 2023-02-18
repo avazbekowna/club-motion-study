@@ -82,3 +82,91 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  #discover {
+    .discover {
+      &-bg {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 75px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #discover {
+    .discover {
+      &-title {
+        font-size: 34px;
+      }
+      &-line {
+        width: 90px;
+      }
+      &-h2 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 32px;
+      }
+      .p-1 {
+        margin: 24px 0 66px 0;
+      }
+      &-h3 {
+        font-size: 24px;
+      }
+      &-list {
+        &_icon {
+          font-size: 20px;
+        }
+        &_item {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 450px) {
+  #discover {
+    .discover {
+      &-title {
+        font-size: 28px;
+      }
+      &-line {
+        width: 90px;
+      }
+      &-h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+      .p-1 {
+        margin: 24px 0 60px 0;
+      }
+      &-h3 {
+        font-size: 18px;
+      }
+      &-list {
+        &_icon {
+          font-size: 18px;
+        }
+        &_item {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+}

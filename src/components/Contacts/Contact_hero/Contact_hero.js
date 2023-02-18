@@ -9,7 +9,7 @@ const ContactHero = () => {
                         <h1 className="university--title">Solbrige University</h1>
 
                         <div className="university--block">
-                            <div>
+                            <div className="photo-hero">
                                 <img src={university} alt=""/>
                             </div>
 
