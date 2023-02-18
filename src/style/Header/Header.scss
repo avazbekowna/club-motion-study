@@ -1,12 +1,14 @@
 @import "./src/style/variables";
 @import "./src/style/mixin";
+@import "./Burger";
+
 
 #header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 999;
   background: $bg-light;
   box-shadow: 5px 8px 24px rgba(0, 0, 0, 0.1);
   border-top: 8px solid $bg-danger;
@@ -27,10 +29,7 @@
           font-size: $font-size14;
           text-transform: capitalize;
           color: $color-dark;
-
-
         }
-
       }
       &-search {
         margin: 0 59px 0 83px;
@@ -65,6 +64,9 @@
         }
       }
     }
+    #burger {
+      display: none;
+    }
   }
 }
 
@@ -84,6 +86,7 @@
   }
 
 }
+
 
 @media (max-width: 768px) {
   #header {

@@ -4,6 +4,7 @@
 @import "pages/Aptis";
 @import "pages/Other-exams";
 
+
 // 1) Hero (EXPLORE THE WORLD)
 #hero {
   margin-bottom: 210px;
@@ -620,6 +621,7 @@
   #social-modal {
     position: fixed;
     top: 0;
+    right: 0;
     left: 0;
     bottom: 0;
     z-index: 140;
@@ -630,20 +632,13 @@
 
     .social-modal {
       position: fixed;
-      top: 35%;
-      left: 60%;
-      //transform: translate(-50%, -60%);
-      animation: move 3s ;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -60%);
       z-index: 152;
       padding: 40px;
       background-color: $bg-light;
-      transition: 4s linear;
-      @keyframes move {
-        60%{
-          top: 180px;
-        }
 
-      }
       h2 {
         font-weight: 500;
         font-size: $font-size22;
@@ -697,8 +692,6 @@
     }
   }
 }
-
-
 
 
 @media (max-width: 1400px) {
@@ -1208,11 +1201,11 @@
         }
       }
       &-address {
-        width: 90%;
-        margin-right: 40px;
+        width: 75%;
+        margin-right: 0px;
       }
       &_social-links {
-        top: 747px;
+        top: 774px;
         right: 18px;
         width: 480px;
         height: 700px;
@@ -1564,6 +1557,18 @@
         }
       }
     }
+
+    // Modal
+    #social-modal {
+      .social-modal {
+        padding: 26px;
+
+        &_icons {
+          margin: 30px 0 50px 0;
+        }
+
+      }
+    }
   }
 }
 
@@ -1741,6 +1746,22 @@
       }
     }
   }
+
+  // Modal
+  #social-modal {
+    .social-modal {
+      padding: 26px;
+
+      &_icons {
+        display: grid !important;
+        grid-template-columns: 50px 50px;
+        justify-content: center;
+        gap: 25px;
+        margin: 30px 0 50px 0;
+      }
+
+    }
+  }
 }
 
 @media (max-width: 385px) {
@@ -1803,4 +1824,10 @@
   }
 
 }
+
+
+
+
+
+
 

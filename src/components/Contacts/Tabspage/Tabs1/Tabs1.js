@@ -6,6 +6,7 @@ import {MdError} from "react-icons/md";
 import {FaInstagramSquare, FaTelegram} from "react-icons/fa";
 import {RiWhatsappFill} from "react-icons/ri";
 import {AiFillInstagram} from "react-icons/ai";
+import {BsInstagram} from "react-icons/bs";
 
 const Tabs1 = () => {
     return (
@@ -15,7 +16,7 @@ const Tabs1 = () => {
                     <div className="big-dec--first">
 
                         <div className="description">
-                            <div>
+                            <div className="photo-tabs">
                                 <img src={tabs1} alt=""/>
                             </div>
                             <div className="lands">
@@ -25,12 +26,12 @@ const Tabs1 = () => {
                         </div>
 
                         <div className="big-dec--first--ect">
-                           <div>
+                           <div className="bre">
                                <h1>Nominal duration: <span>   4.5 years(240 ECTS)</span></h1>
                            </div>
                             <div className="awards">
                                 <h1>Awards:</h1>
-                                <div>
+                                <div className="erko">
                                     <p><span>B.Sc.</span> (Professional Bachelor’s  <br/>
                                         degree in Business <br/>
                                         Management, qualification: <br/>
@@ -155,7 +156,7 @@ const Tabs1 = () => {
                                    <RiWhatsappFill/>
                                </div>
                                 <div className="icon2">
-                                   <AiFillInstagram/>
+                                    <BsInstagram className="info-address_icons-icon"/>
                                 </div>
                               <div className="icon3">
                                   <FaTelegram/>

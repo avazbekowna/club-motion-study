@@ -5,8 +5,10 @@ import AboutTeam from "./About_team/About_team";
 const About = () => {
     return (
         <>
-            <AboutHero/>
-            <AboutTeam/>
+          <div className="wrapper">
+              <AboutHero/>
+              <AboutTeam/>
+          </div>
         </>
     );
 };
