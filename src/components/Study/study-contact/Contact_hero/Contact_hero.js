@@ -1,5 +1,5 @@
 import React from 'react';
-import university from  "./../../../img/university.png"
+import university from "../../../../img/university.png"
 const ContactHero = () => {
     return (
         <>

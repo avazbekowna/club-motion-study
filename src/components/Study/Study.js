@@ -34,7 +34,7 @@ const Study = () => {
                                 </p>
                             </div>
                             <div className="button-study">
-                                <NavLink to={'/Country'}><button>Explore</button></NavLink>
+                                <NavLink to={'/Country'}><button className='button-explore'>Explore</button></NavLink>
                             </div>
                         </div>
 

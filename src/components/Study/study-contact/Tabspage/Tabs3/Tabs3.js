@@ -1,10 +1,10 @@
 import React from 'react';
-import pho1 from "./../../../../img/photo1.png"
-import pho2 from "./../../../../img/photo2.png"
-import pho3 from "./../../../../img/photo3.png"
-import pho4 from "./../../../../img/photo4.png"
-import pho5 from "./../../../../img/phote5.png"
-import pho6 from "./../../../../img/photo6.png"
+import pho1 from "../../../../../img/photo1.png"
+import pho2 from "../../../../../img/photo2.png"
+import pho3 from "../../../../../img/photo3.png"
+import pho4 from "../../../../../img/photo4.png"
+import pho5 from "../../../../../img/phote5.png"
+import pho6 from "../../../../../img/photo6.png"
 const Tabs3 = () => {
     return (
         <>

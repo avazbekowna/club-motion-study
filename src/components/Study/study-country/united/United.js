@@ -8,7 +8,6 @@ import edith from './../../../../img/Frame 141 (4).png'
 import dcu from './../../../../img/Frame 141 (5).png'
 import cowan from './../../../../img/Frame 141 (6).png'
 import {CiLocationOn} from "react-icons/ci";
-import {NavLink} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
 
 
@@ -66,7 +65,7 @@ const United = () => {
                             </div>
                         </div>
                         <div className="university">
-                            <div className="university-type" onClick={() => navigate('/Contacts')} >
+                            <div className="university-type" onClick={() => navigate('/Study-contact')} >
 
                                 <div className="image-university">
                                     <img src={solbrige} alt=""/>
@@ -219,7 +218,6 @@ const United = () => {
                     </div>
                 </div>
             </div>
-
         </>
     );
 };

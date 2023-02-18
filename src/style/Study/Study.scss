@@ -1,3 +1,7 @@
+@import "./src/style/Study/Tabspage/Tabspage";
+@import "./src/style/Study/Contacts_hero/Contacts_hero";
+
+
 .study-abroad{
   margin-bottom: 200px;
   h1{
@@ -78,3 +82,243 @@
     }
   }
 }
+
+@media screen and (max-width: 1140px){
+  .study-abroad{
+    .content-study{
+      .study-info{
+        margin-left: 80px;
+        p{
+        }
+      }
+      .study-img{
+        img{
+          width: 90%;
+        }
+        .border-img{
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and ( max-width: 1024px){
+  .study-abroad{
+    .content-study{
+      .study-img {
+      img{
+        width: 80%;
+      }
+        .border-img{
+          width: 240px;
+          height: 300px;
+        }
+      }
+      .study-info{
+        p{
+          font-size: 17px;
+
+        }
+        .info-our{
+          p{
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and ( max-width: 992px) {
+  .study-abroad{
+    .content-study{
+      .study-img{
+        .border-img{
+          width: 230px;
+          height: 300px;
+        }
+      }
+      .study-info p{
+        width: 450px;
+        margin-left: 60px;
+        font-size: 16px;
+      }
+      .info-our {
+        h2{
+          margin-left: 100px;
+        }
+        p{
+          //width: 400px;
+          font-size: 16px !important;
+          width: 380px !important;
+        }
+      }
+      .button-study{
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .study-abroad{
+    .content-study{
+      text-align: center;
+      display: block;
+      .study-img{
+        img{
+          width: 50%;
+        }
+        .border-img{
+          width: 320px;
+          height: 400px;
+          margin-left: 170px;
+        }
+      }
+      .study-info{
+        margin-top: 80px;
+        p{
+          margin-left: 40px;
+        }
+        .info-our{
+          h2{
+            margin-left: 0;
+          }
+          p{
+            width: 100% !important;
+            text-align: start;
+          }
+        }
+      }
+      .button-study{
+        margin-left: -40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .study-abroad{
+    .content-study{
+      display: block;
+      .study-img{
+        img{
+          width: 60%;
+        }
+        .border-img{
+          width: 300px;
+          height: 350px;
+          margin-left: 70px ;
+        }
+      }
+      .study-info{
+        margin-left: 0;
+        p{
+          //margin-left: 0;
+        }
+        .info-our{
+          h2{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .study-abroad{
+    .content-study{
+      .study-img{
+        .border-img{
+          width: 230px;
+        }
+      }
+      .study-info{
+        p{
+          width: 370px;
+          margin-left: 13px;
+        }
+        .info-our{
+          p{
+            width: 100%!important;
+          }
+
+        }
+
+      }
+      .button-study{
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .study-abroad{
+    h1{
+      font-size: 35px;
+    }
+    .content-study{
+      .study-info{
+        p{
+          margin-left: -4px;
+        }
+      }
+      .study-img{
+        .border-img{
+          width: 190px;
+          height: 250px;
+        }
+      }
+      .button-study{
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px){
+  .study-abroad{
+    .content-study{
+      .study-img{
+        .border-img{
+          width: 170px;
+        }
+      }
+      .study-info{
+        p{
+          width: 320px;
+        }
+        .info-our{
+          p{
+            width: 300px !important;
+            font-size: 15px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px){
+  .study-abroad{
+    .content-study{
+      .button-study{
+        button{
+          margin-left: -20px;
+        }
+      }
+      .study-img{
+        .border-img{
+          margin-left: 40px;
+        }
+      }
+
+    }
+  }
+
+}
+
+

@@ -15,6 +15,8 @@ import DiscoverMore from "./components/Home/Home_exams/Discover-more/Discover-mo
 import Aptis from "./components/Home/Home_exams/Aptis/Aptis";
 import United from "./components/Study/study-country/united/United";
 import Country from "./components/Study/study-country/Country";
+import StudyContact from "./components/Study/study-contact/Study-contact";
+import Home_form from "./components/Home/Home_form/Home_form";
 
 
 function App() {
@@ -46,6 +48,8 @@ function App() {
                     <Route path={"/Other-exams"} element={<OtherExams/>}/>
                     <Route path={"/United"} element={<United/>}/>
                     <Route path={"/Country"} element={<Country/>}/>
+                    <Route path={"/study-contact"} element={<StudyContact/>}/>
+                    <Route path={"/"} element={<Home_form/>}/>
 
                 </Routes>
             </div>

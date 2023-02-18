@@ -1,7 +1,7 @@
 import React from 'react';
-import tabs1 from "./../../../../img/tabs1.png"
-import calendar1 from "./../../../../img/calendar1.png"
-import calendar2 from "./../../../../img/calendar2.png"
+import tabs1 from "../../../../../img/tabs1.png"
+import calendar1 from "../../../../../img/calendar1.png"
+import calendar2 from "../../../../../img/calendar2.png"
 import {MdError} from "react-icons/md";
 import {FaInstagramSquare, FaTelegram} from "react-icons/fa";
 import {RiWhatsappFill} from "react-icons/ri";

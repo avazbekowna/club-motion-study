@@ -1,6 +1,7 @@
-@import "src/style/Contacts/Tabspage/Tabs1/Tabs1";
-@import "src/style/Contacts/Tabspage/Tabs2/Tabs2";
-@import "src/style/Contacts/Tabspage/Tabs3/Tabs3";
+@import "src/style/Study/Tabspage/Tabs1/Tabs1";
+@import "src/style/Study/Tabspage/Tabs2/Tabs2";
+@import "src/style/Study/Tabspage/Tabs2/Tabs2";
+
 
 
 .tabs{
@@ -17,7 +18,8 @@
   justify-content: center;
 
 
-  .tabHead{
+
+  .tabHead1{
     width: 355px;
     height: 15px;
     text-align: center;
@@ -28,13 +30,39 @@
     text-transform: capitalize;
     color: #212121;
     background: #F5F5F5;
-    border-radius: 5px;
+    cursor: pointer;
   }
+  .tabHead2{
+    width: 365px;
+    height: 15px;
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #212121;
+    background: #F5F5F5;
+    cursor: pointer;
+  }
+
+  .tabHead3{
+    width: 355px;
+    height: 15px;
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #212121;
+    background: #F5F5F5;
+    cursor: pointer;
+  }
+
+
 }
-.active{
-  background: white;
-  color: blue;
-}
+
 
 .tabContent{
   margin-bottom: 200px;
