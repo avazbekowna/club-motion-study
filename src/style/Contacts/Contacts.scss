@@ -749,19 +749,185 @@
   }
   #university .university--block .blocks--location {
     width: 335px;
-    margin-left: -3px;
+    margin-left: -6px;
   }
   #university .university--block .blocks--type {
     width: 335px;
-    margin-left: -3px;
+    margin-left: -6px;
   }
-  #university .university--block .blocks--type span {
+  #university .university--block .blocks--type h1 {
+    width: 314px;
   }
   #university .university--block .blocks--fashion {
     width: 341px;
+    margin-left: -7px;
+  }
+  .tabsList .tabHead {
+    width: 65px;
+    font-size: 10px;
+  }
+  .tabContent .line-tab {
+    width: 111px;
+    margin-left: 215px;
+  }
+  .tabContent .line-tab2 {
+    width: 111px;
+    margin-left: 161px;
+  }
+  .tabContent .line-tab3 {
+    width: 111px;
+    margin-left: 569px;
+  }
+  .photo img {
+    width: 150px;
+  }
+  #cost .cost h1 {
+    width: 333px;
+    margin-right: -35px;
+    font-size: 14px;
+    line-height: 27px;
+  }
+  #cost .cost h1 span {
+    font-size: 14px;
+  }
+  #images .photo {
+    grid-template-columns: 180px 170px;
+    margin-left: 294px;
+    margin-top: -98px;
+  }
+  #description .big-dec--first--ect h1 span {
+    font-size: 16px;
+  }
+  #description .big-dec--first--ect h1 {
+    font-size: 16px;
+  }
+  #cost .cost p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 52px;
+  }
+  #description .big-dec--first--ect h1 {
+    width: 500px;
+    margin-left: 190px;
+  }
+  #description .big-dec--first--ect .awards p {
+    margin-top: -120px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .photo-tabs {
+    margin-left: 73px;
+  }
+  #description .big-dec--first--ect .line-dec {
+    width: 248px;
+    margin-top: 21px;
+  }
+  #description .big-dec--first--ect .application {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 63px;
+  }
+  #description .big-dec--first--ect .entry-block {
+    margin-right: 58px;
+  }
+  #description .big-dec .apply {
+    width: 337px;
+    margin-right: -88px;
+  }
+  #description .big-dec .apply--pre--block2 h2 {
+    font-size: 16px;
+  }
+  #description .big-dec .apply--pre--block1 .pre1 {
+    img{
+      width: 40px;
+    }
+  }
+  #description .big-dec .apply--pre--block1 .pre1 {
+    margin-top: 30px;
+    margin-bottom: 170px;
+    margin-left: -10px;
+  }
+  #description .big-dec .apply--now {
+    width: 288px;
+    height: 55px;
+    font-size: 16px;
+    margin-left: 24px;
+  }
+  #description .big-dec .apply--pre--block2 {
+
+    margin-top: 20px;
+  }
+  #description .big-dec .apply--pre--block2 h5 {
+    font-size: 16px;
+  }
+  #description .big-dec .apply--pre--block2 h3 span {
+    font-size: 16px;
+  }
+  #description .big-dec .apply--pre--block2 h3 {
+    font-size: 16px;
+  }
+  #description .big-dec .apply--pre--block2 h6 {
+    font-size: 16px;
+  }
+  #description .big-dec .apply--pre--block2 h4 {
+    font-size: 16px;
+  }
+  #description .big-dec .apply--pre--block1 .pre2 {
+   img{
+     width: 40px;
+     margin-left: -10px;
+   }
+  }
+
+  #description .big-dec .apply--now2 {
+    font-size: 16px;
+  }
+  #description .big-dec .apply--now2 {
+    width: 291px;
+    height: 57px;
+    margin-left: 24px;
+  }
+  #description .big-dec .apply--error--block1 .error1 {
+    margin-left: 24px;
+  img{
+    width: 40px;
+
+  }
+  }
+  #description .big-dec .apply--error h2 span {
+    font-size: 16px;
+  }
+  #description .big-dec .apply--error h2 {
+    font-size: 16px;
+  }
+  #description .big-dec--first--ect .application--block2 .semester {
+    width: 244px;
+    margin-top: 25px;
+  }
+  #description .big-dec .apply--error h1 {
+    font-size: 16px;
+  }
+  #description .big-dec .apply--line {
+    width: 280.02px;
+    margin-top: 25px;
+  }
+  #description .big-dec .apply--share {
+    margin-top: 36px;
+  }
+  #description .big-dec .apply {
+    height: 921px;
+  }
+  #description .big-dec .apply--share h1 {
+    font-size: 16px;
+    margin-left: 39px;
+  }
+  #description .big-dec .apply--share--icons .icon2 {
+    margin: 10px 10px 20px 10px;
   }
 
 }
+
 @media (max-width: 320px) {
 
 }
