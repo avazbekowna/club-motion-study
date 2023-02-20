@@ -23,7 +23,7 @@
   }
 
   .tabsList .tabHead {
-    width: 311px;
+    width: 358px;
   }
   #description .big-dec .apply {
     width: 444px;
@@ -75,7 +75,9 @@
     margin-left: 670px;
   }
 
-
+  .tabsList .tabHead {
+    width: 314px!important;
+  }
 
   .photo-hero img{
     width: 500px;
@@ -340,6 +342,9 @@
 }
 
 @media (max-width: 768px) {
+  .tabsList .tabHead {
+    width: 229px !important;
+  }
   #description .big-dec--first {
     margin-top: -150px!important;
     margin-left: 70px;
@@ -424,6 +429,9 @@
 }
 
 @media (max-width: 576px) {
+  #tabsList .tabHead {
+    width: 167px !important;
+  }
   #description .big-dec--first {
     margin-top: -141px !important;
     margin-left: 70px;
@@ -481,6 +489,9 @@
 }
 
 @media(max-width: 500px) {
+  .tabsList .tabHead {
+    width: 153px !important;
+  }
   #images .photo {
     margin-top: -52px!important;
   }
@@ -683,7 +694,12 @@
 }
 
 @media (max-width: 400px) {
-
+  .tabsList .tabHead {
+    width: 112px !important;
+  }
+  .tabsList .tabHead {
+    width: 126px !important;
+  }
   .tabContent .line-tab {
     width: 123px;
     margin-left: 195px;
