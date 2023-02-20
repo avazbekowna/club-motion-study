@@ -1,4 +1,5 @@
 #about{
+  padding-top: 180px;
   .best{
     display: flex;
     align-items: center;
@@ -163,7 +164,6 @@
 
   #about .best .education {
     margin-left: 126px;
-    text-align: center;
   }
   #about .best .education h2 {
     width: 571px;
@@ -212,6 +212,10 @@
 @media(max-width: 576px){
   #about{
     margin-top: -100px;
+  }
+  #about .best .about--us--us1 {
+    width: 275px;
+    height: 318px !important;
   }
   #about .best .about--us--us1 {
     margin-top: -34px;
@@ -276,21 +280,125 @@
 }
 
 @media(max-width: 450px){
+  #teams .team {
+    grid-template-columns: 450px;
+    margin-left: 109px !important;
+  }
+  #about .best .about--us--person img {
+    width: 290px;
+    height: 278px;
+    margin-left: -128px;
+  }
+  #about .best .about--us--us1 {
+    width: 250px;
+    height: 240px;
+  }
+  #about .best .about {
+    margin-top: 134px;
+    margin-left: 60px;
+  }
+  #about .best .education h3 {
+    width: 328px;
+    font-size: 13px;
+    line-height: 23px;
+    margin-left: 2px!important;
+  }
+  #about .best .education h2 {
+    width: 403px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  #about .best {
+    margin-left: -105px;
+    margin-top: 80px;
+  }
+  #about .best .education span {
+    font-size: 13px;
+    margin-left: 43px;
+  }
+  #about .best .education h1 {
+    padding-left: 40px;
+  }
+  #about .best .education h2 {
+    margin-left: 39px;
+  }
+  #about .best .education {
+    margin-left: 64px;
+  }
+  #about .best .about--us--us1 {
+    width: 370px!important;
+    height: 240px;
+    margin-left: 12px!important;
+  }
+  #about .best .about--us--person img {
+    width: 373px!important;
+    height: 340px!important;
+    margin-left: -172px!important;
+    margin-top: -42px;
+  }
+  #teams .team--block {
+    width: 261px!important;
+  }
+  #teams .team--block .images img {
+    width: 261px!important;
+  }
+  #teams .team {
+    grid-template-columns: 450px;
+    margin-left: 75px !important;
+  }
 
 }
+
 
 @media(max-width: 400px){
   #about .best .about--us--person img {
     height: 287px!important;
     margin-left: -157px!important;
   }
-  #teams .team {
-    grid-template-columns: 450px;
-    margin-left: 87px !important;
-  }
   #about{
     margin-top: -70px;
   }
+  #about .best .education h3 {
+    margin-right: 20px;
+  }
+  #about .best .education {
+    margin-left: 109px;
+  }
+  #about .best .education h2 {
+    width: 403px;
+    font-size: 15px!important;
+    line-height: 27px;
+  }
+  #about .best .about--us--us1 {
+    width: 317px !important;
+    margin-top: 15px;
+    margin-left: -2px!important;
+  }
+  #about .best .about--us--person img {
+    width: 334px !important;
+    height: 340px !important;
+    margin-left: -183px !important;
+    margin-top: 41px;
+  }
+  #teams {
+    margin-bottom: 200px;
+    margin-left: -115px;
+  }
+
+
+  #teams .team--block {
+    width: 360px !important;
+    height: 325px!important;
+  }
+  #teams .teams--title {
+    font-size: 29px;
+    margin-left: 98px;
+  }
+  #teams .team--block .images img {
+    width: 360px !important;
+    height: 235px!important;
+  }
+
 }
 
 @media(max-width: 375px){
