@@ -1,406 +1,406 @@
-#about{
-  padding-top: 180px;
-  .best{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .about{
-      margin-top: 200px;
-      margin-bottom: 100px;
-
-
-      &--us{
-
-        &--us1{
-          width: 550px;
-          height: 520px;
-          opacity: 0.8;
-          border: 3px solid #212121;
-
-        }
-        &--person{
-          position: absolute;
-          left: 125px;
-          top: 201px;
-          border-radius: 2px;
-          img{
-            width: 620px;
-            height: 576px;
-            margin-top: 100px;
-          }
-        }
-      }
-
-
-
-
-    }
-
-    .education{
-      margin-left: 200px;
-      span{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 32px;
-        text-transform: uppercase;
-        color: #6483F6;
-      }
-      h1{
-        width: 359px;
-        font-family: 'Gilroy',sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 52px;
-        line-height: 64px;
-        color: #333333;
-        margin-top: 18px;
-
-      }
-      h2{
-        width: 470px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 32px;
-        color: #333333;
-        margin-top: 28px;
-      }
-      h3{
-        width: 470px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 32px;
-        margin-top: 10px;
-        color: rgba(51, 51, 51, 0.5);
-
-      }
-    }
-  }
-  .wrapper{
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media(max-width: 1200px){
-  #about .best .about--us--person img {
-    width: 447px;
-    height: 470px;
-  }
-  #about .best .about--us--us1 {
-    width: 395px;
-    height: 409px;
-    opacity: 0.8;
-    border: 3px solid #212121;
-  }
-}
-
-@media(max-width: 1024px){
-  #about .best .about--us--person img {
-    width: 424px;
-    height: 439px;
-    margin-left: -35px;
-  }
-  #about .best .about--us--us1 {
-    width: 346px;
-    height: 373px;
-  }
-  #about .best .education h1 {
-    width: 359px;
-    font-size: 40px;
-    line-height: 49px;
-    margin-top: -3px;
-  }
-  #about .best .education h2 {
-    width: 400px;
-    font-size: 20px;
-    line-height: 32px;
-    margin-top: 21px;
-  }
-  #about .best .education h3 {
-    width: 389px;
-    font-size: 16px;
-    line-height: 32px;
-    margin-top: 10px;
-    color: rgba(51, 51, 51, 0.5);
-  }
-  #about .best .education {
-    margin-left: 181px;
-  }
-
-}
-
-
-@media(max-width: 992px){
-
-}
-
-@media(max-width: 768px){
-
-  #about .best {
-    flex-direction: column-reverse;
-  }
-  #about .best .about--us--person {
-    left: 281px;
-    top: 584px;
-  }
-  #footer .footer--line {
-    width: 691px;
-  }
-  #about .best {
-    flex-direction: column-reverse;
-    margin-top: 100px;
-  }
-  #about .best .about--us--person {
-    left: 225px;
-    top: 687px;
-  }
-  #about .best {
-    margin-left: -100px;
-  }
-
-  #about .best .education {
-    margin-left: 126px;
-  }
-  #about .best .education h2 {
-    width: 571px;
-
-  }
-  #about .best .education h1 {
-    width: 592px;
-
-  }
-  #about .best .about {
-     margin-top: 170px;
-   }
-  #about .best .about--us--person {
-    top: 534px;
-  }
-  #about .best .education h3 {
-    width: 574px;
-    font-size: 18px;
-    line-height: 30px;
-  }
-  #teams .team {
-    margin-top: 70px!important;
-  }
-
-
-
-
-
-
-  //#about .best .education {
-  //  margin-left: -17px;
-  //}
-  //#about .best .education h1 {
-  //  font-size: 44px;
-  //  margin-top: 11px;
-  //}
-  //#about .best .education h2 {
-  //  width: 490px;
-  //  margin-top: 21px;
-  //}
-  //#about .best .education h3 {
-  //  width: 576px;
-  //}
-}
-
-@media(max-width: 576px){
-  #about{
-    margin-top: -100px;
-  }
-  #about .best .about--us--us1 {
-    width: 275px;
-    height: 318px !important;
-  }
-  #about .best .about--us--us1 {
-    margin-top: -34px;
-  }
-  #about .best .about--us--person img {
-    width: 371px;
-    height: 371px;
-    margin-left: -134px;
-  }
-  #about .best .about--us--us1 {
-    width: 344px;
-    height: 295px;
-  }
-  #about .best .education h1 {
-    width: 523px;
-    font-size: 30px;
-  }
-  #about .best .education span {
-    font-size: 13px;
-  }
-  #about .best .education h2 {
-    width: 401px;
-    font-size: 16px;
-    line-height: 27px;
-  }
-  #about .best .education h3 {
-    width: 414px;
-    font-size: 13px;
-    line-height: 24px;
-  }
-  #footer .footer--line {
-    width: 514px;
-  }
-  #about .best .education h1 {
-    width: 417px;
-    font-size: 29px;
-    margin-bottom: -18px;
-  }
-  #teams .team {
-    margin-top: 120px;
-    margin-left: 110px!important;
-  }
-  #about .best .about--us--person {
-    top: 493px!important;
-  }
-  #about .best .about--us--person img {
-    width: 349px;
-    height: 351px;
-    margin-left: -104px;
-  }
-  #about .best .about--us--us1 {
-    width: 270px;
-    height: 295px;
-  }
-  #about .best .about--us--person img {
-    margin-top: -10px;
-  }
-}
-
-@media(max-width: 500px){
-
-}
-
-@media(max-width: 450px){
-  #teams .team {
-    grid-template-columns: 450px;
-    margin-left: 109px !important;
-  }
-  #about .best .about--us--person img {
-    width: 290px;
-    height: 278px;
-    margin-left: -128px;
-  }
-  #about .best .about--us--us1 {
-    width: 250px;
-    height: 240px;
-  }
-  #about .best .about {
-    margin-top: 134px;
-    margin-left: 60px;
-  }
-  #about .best .education h3 {
-    width: 328px;
-    font-size: 13px;
-    line-height: 23px;
-    margin-left: 2px!important;
-  }
-  #about .best .education h2 {
-    width: 403px;
-    font-size: 16px;
-    line-height: 27px;
-  }
-  #about .best {
-    margin-left: -105px;
-    margin-top: 80px;
-  }
-  #about .best .education span {
-    font-size: 13px;
-    margin-left: 43px;
-  }
-  #about .best .education h1 {
-    padding-left: 40px;
-  }
-  #about .best .education h2 {
-    margin-left: 39px;
-  }
-  #about .best .education {
-    margin-left: 64px;
-  }
-  #about .best .about--us--us1 {
-    width: 370px!important;
-    height: 240px;
-    margin-left: 12px!important;
-  }
-  #about .best .about--us--person img {
-    width: 373px!important;
-    height: 340px!important;
-    margin-left: -172px!important;
-    margin-top: -42px;
-  }
-  #teams .team--block {
-    width: 261px!important;
-  }
-  #teams .team--block .images img {
-    width: 261px!important;
-  }
-  #teams .team {
-    grid-template-columns: 450px;
-    margin-left: 75px !important;
-  }
-
-}
-
-
-@media(max-width: 400px){
-  #about .best .about--us--person img {
-    height: 287px!important;
-    margin-left: -157px!important;
-  }
-  #about{
-    margin-top: -70px;
-  }
-  #about .best .education h3 {
-    margin-right: 20px;
-  }
-  #about .best .education {
-    margin-left: 109px;
-  }
-  #about .best .education h2 {
-    width: 403px;
-    font-size: 15px!important;
-    line-height: 27px;
-  }
-  #about .best .about--us--us1 {
-    width: 317px !important;
-    margin-top: 15px;
-    margin-left: -2px!important;
-  }
-  #about .best .about--us--person img {
-    width: 334px !important;
-    height: 340px !important;
-    margin-left: -183px !important;
-    margin-top: 41px;
-  }
-  #teams {
-    margin-bottom: 200px;
-    margin-left: -115px;
-  }
-
-
-  #teams .team--block {
-    width: 360px !important;
-    height: 325px!important;
-  }
-  #teams .teams--title {
-    font-size: 29px;
-    margin-left: 98px;
-  }
-  #teams .team--block .images img {
-    width: 360px !important;
-    height: 235px!important;
-  }
-
-}
-
-@media(max-width: 375px){
-
-}
+//#about{
+//  padding-top: 180px;
+//  .best{
+//    display: flex;
+//    align-items: center;
+//    justify-content: space-between;
+//    .about{
+//      margin-top: 200px;
+//      margin-bottom: 100px;
+//
+//
+//      &--us{
+//
+//        &--us1{
+//          width: 550px;
+//          height: 520px;
+//          opacity: 0.8;
+//          border: 3px solid #212121;
+//
+//        }
+//        &--person{
+//          position: absolute;
+//          left: 125px;
+//          top: 201px;
+//          border-radius: 2px;
+//          img{
+//            width: 620px;
+//            height: 576px;
+//            margin-top: 100px;
+//          }
+//        }
+//      }
+//
+//
+//
+//
+//    }
+//
+//    .education{
+//      margin-left: 200px;
+//      span{
+//        font-style: normal;
+//        font-weight: 700;
+//        font-size: 16px;
+//        line-height: 32px;
+//        text-transform: uppercase;
+//        color: #6483F6;
+//      }
+//      h1{
+//        width: 359px;
+//        font-family: 'Gilroy',sans-serif;
+//        font-style: normal;
+//        font-weight: 500;
+//        font-size: 52px;
+//        line-height: 64px;
+//        color: #333333;
+//        margin-top: 18px;
+//
+//      }
+//      h2{
+//        width: 470px;
+//        font-style: normal;
+//        font-weight: 400;
+//        font-size: 20px;
+//        line-height: 32px;
+//        color: #333333;
+//        margin-top: 28px;
+//      }
+//      h3{
+//        width: 470px;
+//        font-weight: 400;
+//        font-size: 16px;
+//        line-height: 32px;
+//        margin-top: 10px;
+//        color: rgba(51, 51, 51, 0.5);
+//
+//      }
+//    }
+//  }
+//  .wrapper{
+//    min-height: 100%;
+//    overflow: hidden;
+//    display: flex;
+//    flex-direction: column;
+//  }
+//}
+//
+//@media(max-width: 1200px){
+//  #about .best .about--us--person img {
+//    width: 447px;
+//    height: 470px;
+//  }
+//  #about .best .about--us--us1 {
+//    width: 395px;
+//    height: 409px;
+//    opacity: 0.8;
+//    border: 3px solid #212121;
+//  }
+//}
+//
+//@media(max-width: 1024px){
+//  #about .best .about--us--person img {
+//    width: 424px;
+//    height: 439px;
+//    margin-left: -35px;
+//  }
+//  #about .best .about--us--us1 {
+//    width: 346px;
+//    height: 373px;
+//  }
+//  #about .best .education h1 {
+//    width: 359px;
+//    font-size: 40px;
+//    line-height: 49px;
+//    margin-top: -3px;
+//  }
+//  #about .best .education h2 {
+//    width: 400px;
+//    font-size: 20px;
+//    line-height: 32px;
+//    margin-top: 21px;
+//  }
+//  #about .best .education h3 {
+//    width: 389px;
+//    font-size: 16px;
+//    line-height: 32px;
+//    margin-top: 10px;
+//    color: rgba(51, 51, 51, 0.5);
+//  }
+//  #about .best .education {
+//    margin-left: 181px;
+//  }
+//
+//}
+//
+//
+//@media(max-width: 992px){
+//
+//}
+//
+//@media(max-width: 768px){
+//
+//  #about .best {
+//    flex-direction: column-reverse;
+//  }
+//  #about .best .about--us--person {
+//    left: 281px;
+//    top: 584px;
+//  }
+//  #footer .footer--line {
+//    width: 691px;
+//  }
+//  #about .best {
+//    flex-direction: column-reverse;
+//    margin-top: 100px;
+//  }
+//  #about .best .about--us--person {
+//    left: 225px;
+//    top: 687px;
+//  }
+//  #about .best {
+//    margin-left: -100px;
+//  }
+//
+//  #about .best .education {
+//    margin-left: 126px;
+//  }
+//  #about .best .education h2 {
+//    width: 571px;
+//
+//  }
+//  #about .best .education h1 {
+//    width: 592px;
+//
+//  }
+//  #about .best .about {
+//     margin-top: 170px;
+//   }
+//  #about .best .about--us--person {
+//    top: 534px;
+//  }
+//  #about .best .education h3 {
+//    width: 574px;
+//    font-size: 18px;
+//    line-height: 30px;
+//  }
+//  #teams .team {
+//    margin-top: 70px!important;
+//  }
+//
+//
+//
+//
+//
+//
+//  //#about .best .education {
+//  //  margin-left: -17px;
+//  //}
+//  //#about .best .education h1 {
+//  //  font-size: 44px;
+//  //  margin-top: 11px;
+//  //}
+//  //#about .best .education h2 {
+//  //  width: 490px;
+//  //  margin-top: 21px;
+//  //}
+//  //#about .best .education h3 {
+//  //  width: 576px;
+//  //}
+//}
+//
+//@media(max-width: 576px){
+//  #about{
+//    margin-top: -100px;
+//  }
+//  #about .best .about--us--us1 {
+//    width: 275px;
+//    height: 318px !important;
+//  }
+//  #about .best .about--us--us1 {
+//    margin-top: -34px;
+//  }
+//  #about .best .about--us--person img {
+//    width: 371px;
+//    height: 371px;
+//    margin-left: -134px;
+//  }
+//  #about .best .about--us--us1 {
+//    width: 344px;
+//    height: 295px;
+//  }
+//  #about .best .education h1 {
+//    width: 523px;
+//    font-size: 30px;
+//  }
+//  #about .best .education span {
+//    font-size: 13px;
+//  }
+//  #about .best .education h2 {
+//    width: 401px;
+//    font-size: 16px;
+//    line-height: 27px;
+//  }
+//  #about .best .education h3 {
+//    width: 414px;
+//    font-size: 13px;
+//    line-height: 24px;
+//  }
+//  #footer .footer--line {
+//    width: 514px;
+//  }
+//  #about .best .education h1 {
+//    width: 417px;
+//    font-size: 29px;
+//    margin-bottom: -18px;
+//  }
+//  #teams .team {
+//    margin-top: 120px;
+//    margin-left: 110px!important;
+//  }
+//  #about .best .about--us--person {
+//    top: 493px!important;
+//  }
+//  #about .best .about--us--person img {
+//    width: 349px;
+//    height: 351px;
+//    margin-left: -104px;
+//  }
+//  #about .best .about--us--us1 {
+//    width: 270px;
+//    height: 295px;
+//  }
+//  #about .best .about--us--person img {
+//    margin-top: -10px;
+//  }
+//}
+//
+//@media(max-width: 500px){
+//
+//}
+//
+//@media(max-width: 450px){
+//  #teams .team {
+//    grid-template-columns: 450px;
+//    margin-left: 109px !important;
+//  }
+//  #about .best .about--us--person img {
+//    width: 290px;
+//    height: 278px;
+//    margin-left: -128px;
+//  }
+//  #about .best .about--us--us1 {
+//    width: 250px;
+//    height: 240px;
+//  }
+//  #about .best .about {
+//    margin-top: 134px;
+//    margin-left: 60px;
+//  }
+//  #about .best .education h3 {
+//    width: 328px;
+//    font-size: 13px;
+//    line-height: 23px;
+//    margin-left: 2px!important;
+//  }
+//  #about .best .education h2 {
+//    width: 403px;
+//    font-size: 16px;
+//    line-height: 27px;
+//  }
+//  #about .best {
+//    margin-left: -105px;
+//    margin-top: 80px;
+//  }
+//  #about .best .education span {
+//    font-size: 13px;
+//    margin-left: 43px;
+//  }
+//  #about .best .education h1 {
+//    padding-left: 40px;
+//  }
+//  #about .best .education h2 {
+//    margin-left: 39px;
+//  }
+//  #about .best .education {
+//    margin-left: 64px;
+//  }
+//  #about .best .about--us--us1 {
+//    width: 370px!important;
+//    height: 240px;
+//    margin-left: 12px!important;
+//  }
+//  #about .best .about--us--person img {
+//    width: 373px!important;
+//    height: 340px!important;
+//    margin-left: -172px!important;
+//    margin-top: -42px;
+//  }
+//  #teams .team--block {
+//    width: 261px!important;
+//  }
+//  #teams .team--block .images img {
+//    width: 261px!important;
+//  }
+//  #teams .team {
+//    grid-template-columns: 450px;
+//    margin-left: 75px !important;
+//  }
+//
+//}
+//
+//
+//@media(max-width: 400px){
+//  #about .best .about--us--person img {
+//    height: 287px!important;
+//    margin-left: -157px!important;
+//  }
+//  #about{
+//    margin-top: -70px;
+//  }
+//  #about .best .education h3 {
+//    margin-right: 20px;
+//  }
+//  #about .best .education {
+//    margin-left: 109px;
+//  }
+//  #about .best .education h2 {
+//    width: 403px;
+//    font-size: 15px!important;
+//    line-height: 27px;
+//  }
+//  #about .best .about--us--us1 {
+//    width: 317px !important;
+//    margin-top: 15px;
+//    margin-left: -2px!important;
+//  }
+//  #about .best .about--us--person img {
+//    width: 334px !important;
+//    height: 340px !important;
+//    margin-left: -183px !important;
+//    margin-top: 41px;
+//  }
+//  #teams {
+//    margin-bottom: 200px;
+//    margin-left: -115px;
+//  }
+//
+//
+//  #teams .team--block {
+//    width: 360px !important;
+//    height: 325px!important;
+//  }
+//  #teams .teams--title {
+//    font-size: 29px;
+//    margin-left: 98px;
+//  }
+//  #teams .team--block .images img {
+//    width: 360px !important;
+//    height: 235px!important;
+//  }
+//
+//}
+//
+//@media(max-width: 375px){
+//
+//}
