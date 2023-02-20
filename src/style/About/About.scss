@@ -1,2 +1,464 @@
 @import "./src/style/About/About_hero/About_hero";
 @import "./src/style/About/About_team/About_team";
+@import "./../variables";
+@import "./../mixin";
+
+// 1) About Hero (About Us)
+#about-hero {
+  padding-top: 180px;
+  padding-bottom: 187px;
+
+  .about-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    column-gap: 91px;
+    align-items: center;
+    position: relative;
+
+    &_bg {
+      height: 576px;
+      margin-left: 45px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &_desc {
+      &-subtitle {
+        font-weight: 700;
+        font-size: $font-size16;
+        color: #6483F6;
+      }
+
+      &-title {
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 64px;
+        color: #333333;
+        margin: 18px 0 28px 0;
+      }
+
+      &-bold {
+        font-weight: 400;
+        font-size: $font-size20;
+        line-height: 32px;
+        color: #333333;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: $font-size16;
+        line-height: 32px;
+        color: rgba(51, 51, 51, 0.5);
+        margin-top: 12px;
+      }
+    }
+
+    &_frame {
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      z-index: -1;
+      width: 480px;
+      height: 480px;
+      border: 3px solid #000000;
+    }
+  }
+
+}
+
+// 2) About Team (Our Team)
+#our-team {
+  padding-bottom: 213px;
+
+  .our-team {
+    &_title {
+      font-weight: 500;
+      font-size: $font-size_h1;
+      color: $color-heading;
+      margin-bottom: 130px;
+      text-align: center;
+    }
+
+    &_blocks {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 78px 120px;
+
+      &-block {
+        background: $bg-light;
+        box-shadow: 5px 8px 24px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+        padding-bottom: 23px;
+
+        &_bg {
+          height: 309px;
+          border-radius: 8px 8px 0 0;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        p {
+          font-weight: 500;
+          font-size: $font-size20;
+          text-transform: capitalize;
+          color: #000000;
+          margin: 28px 0 15px 0;
+        }
+
+        span {
+          font-weight: 500;
+          font-size: $font-size16;
+          text-transform: capitalize;
+          color: rgba(123, 106, 255, 0.5);
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1200px) {
+  #about-hero {
+    padding-bottom: 130px;
+
+    .about-hero {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 34px;
+      align-items: center;
+
+      &_bg {
+        height: 500px;
+        overflow: hidden;
+        margin-left: 25px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &_frame {
+        bottom: -25px;
+        width: 414px;
+        height: 424px;
+      }
+    }
+  }
+  #our-team {
+    padding-bottom: 213px;
+
+    .our-team {
+      &_title {
+        font-size: 48px;
+      }
+
+      &_blocks {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 42px;
+
+        &-block {
+          &_bg {
+            height: auto;
+
+            img {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #about-hero {
+    padding-bottom: 36px;
+
+    .about-hero {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 34px;
+      align-items: start;
+
+      &_bg {
+        height: 540px;
+        overflow: hidden;
+        margin-left: 25px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &_frame {
+        bottom: 83px;
+        width: 365px;
+        height: 372px;
+      }
+    }
+  }
+  #our-team {
+    padding-bottom: 213px;
+
+    .our-team {
+      &_title {
+        font-size: 40px;
+      }
+
+      &_blocks {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 42px;
+
+        &-block {
+          &_bg {
+            height: auto;
+            overflow: hidden;
+
+            img {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 994px) { // 1) About Hero (About Us)
+  #about-hero {
+    padding-bottom: 140px;
+
+    .about-hero {
+      grid-template-columns:1fr;
+      grid-template-areas:
+              "desc"              "bg";
+      column-gap: 91px;
+      position: relative;
+
+      &_bg {
+        grid-area: bg;
+        height: 460px;
+        overflow: hidden;
+        margin-left: 30px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &_desc {
+        grid-area: desc;
+
+        p {
+          margin: 15px 0 65px 0;
+        }
+      }
+
+      &_frame {
+        width: 80%;
+        height: 510px;
+        bottom: -25px;
+      }
+    }
+  }
+  // 2) About Team (Our Team)
+  #our-team {
+    padding-bottom: 213px;
+
+    .our-team {
+      &_title {
+        font-size: 40px;
+      }
+
+      &_blocks {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 90px;
+
+        &-block {
+          &_bg {
+            height: auto;
+
+            img {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  // 2) About Team (Our Team)
+  #our-team {
+    .our-team {
+      &_title {
+        margin-bottom: 90px;
+      }
+
+      &_blocks {
+        gap: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) { // 1) About Hero (About Us)
+  #about-hero {
+    padding-bottom: 90px;
+
+    .about-hero {
+      &_desc {
+        &-title {
+          font-size: 36px;
+          line-height: 40px;
+        }
+
+        &-bold {
+          font-size: 18px;
+          line-height: 28px;
+        }
+
+        p {
+          line-height: 26px;
+          margin-bottom: 74px;
+        }
+      }
+
+      &_bg {
+        height: 400px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &_frame {
+        height: 447px;
+      }
+    }
+  }
+  // 2) About Team (Our Team)
+  #our-team {
+    .our-team {
+      &_title {
+        font-size: 36px;
+      }
+
+      &_blocks {
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        &-block {
+          width: 66%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    padding-top: 160px;
+  }
+  // 1) About Hero (About Us)
+  #about-hero {
+    .about-hero {
+      &_frame {
+        height: 426px;
+        bottom: -6px;
+      }
+    }
+  }
+
+  // 2) About Team (Our Team)
+  #our-team {
+    .our-team {
+      &_title {
+        font-size: 36px;
+        text-align: start;
+        margin-bottom: 40px;
+      }
+
+      &_blocks {
+        &-block {
+          width: 88%;
+          overflow: hidden;
+
+          &_bg {
+            height: 290px;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 430px) {
+  #about-hero {
+    .about-hero {
+      &_frame {
+        height: 414px;
+        bottom: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) { // 1) About Hero (About Us)
+  #about-hero {
+    .about-hero {
+      &_bg {
+        height: auto;
+      }
+
+      &_frame {
+        height: 377px;
+        bottom: -14px;
+      }
+    }
+  }
+  // 2) About Team (Our Team)
+  #our-team {
+  .our-team {
+    &_blocks {
+      &-block {
+        width: 100%;
+      }
+    }
+  }
+}
+
+}
+
+@media (max-width: 385px) {
+  // 1) About Hero (About Us)
+  #about-hero {    .about-hero {
+    &_frame {        height: 254px;
+      bottom: -13px;      }
+  }  }
+}
+@media (max-width: 320px) {
+  // 1) About Hero (About Us)
+  #about-hero {    .about-hero {
+    &_frame {        height: 220px;
+    }    }
+  }
+}
