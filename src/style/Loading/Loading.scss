@@ -3,31 +3,17 @@
     height: 190px;
     position: relative;
     border-radius: 50%;
-    background: #7318FB;
+    color: black;
     left: 42%;
     top: 50%;
     animation: res 6s ease-in-out alternate;
     z-index: 999;
 
-    @keyframes res {
-      0%{
-        transform: scale(1);
-      }
-      50%{
-        transform: scale(2);
-      }
-      99%{
-        transform: scale(8);
-      }
-      100%{
-        transform: scale(10);
-      }
-    }
 
     .load{
       margin: 50px 0 0 30px;
       position: absolute;
-      width: 160px;
+      width: 200px;
       height: 80px;
       overflow: hidden;
       text-align: center;
@@ -39,21 +25,19 @@
         font-size: 78px;
         text-align: center;
         text-transform: capitalize;
-        color: #FDFDFD;
+        color: #1AA2EE;
         animation: text 6s alternate;
         @keyframes text {
-          0%{
-            transform: translateY(0);
-          }
-          50%{
+
+          40%{
             transition: 2s;
             transform: translateY(-450px);
           }
-          99%{
-            transform: translateY(-910px);
+          90%{
+            transform: translateY(-900px);
           }
           100%{
-            transform: translateY(-1000px);
+            transform: translateY(-990px);
           }
 
         }

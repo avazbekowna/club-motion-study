@@ -87,7 +87,26 @@
             color: #212121;
             margin-top: 19px;
           }
+          .adaptation{
+            display: none;
+          }
 
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #Country{
+    .content-country{
+      .country-flag{
+        .content-flag{
+          .flag-info{
+            display: flex !important;
+            align-items: center;
+            flex-direction: column;
+          }
         }
       }
     }

@@ -11,6 +11,7 @@ import BurgerMenu from "./Burger_menu";
 const Header = () => {
   const [load, setLoad] = useState(true)
   const [contact,setContact] = useState(0)
+  const [accord, setAccord] = useState([])
 
   useEffect(() => {
     setTimeout(() => {
@@ -46,10 +47,23 @@ const Header = () => {
                   Contacts
                 </NavLink>
               </nav>
-              <form className="header_right-search">
+              <NavLink to={'/Country'}> <form  onClick={()=> setAccord(!accord) } className="header_right-search">
                 <CiSearch className="header_right-search_icon" />
-                <input type="text" placeholder="Поиск..." />
-              </form>
+                <input  type="text" placeholder="Поиск..."/>
+                {
+                  accord ? <div className="search-study">
+                        <div className="search_content">
+                          <p>United States</p>
+                          <p>Korea</p>
+                          <p>Australia</p>
+                          <p>Malaysia</p>
+                          <p>Germany</p>
+                        </div>
+                      </div> :
+                      ''
+                }
+
+              </form></NavLink>
               <div className="header_right-langs">
                 <select>
                   <option>ENG</option>

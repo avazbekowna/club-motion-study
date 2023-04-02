@@ -17,6 +17,7 @@ import {NavLink} from "react-router-dom";
 const Country = () => {
     const [country, setCountry] = useState([])
     const [label, setLabel] = useState([])
+    const [language, setLanguage] = useState([])
     return (
         <>
             <div className="Country" id="Country">
@@ -64,6 +65,24 @@ const Country = () => {
                                     <p>Tourism</p>
                                 </div>
                             </div>
+                            <div className="country-item">
+                                <input className='country-input' type="checkbox" name='country3' id='country-2'/>
+                                <label onClick={()=> setLanguage(!language) } className='country-title' htmlFor='country-3'><h3>Countries</h3>
+                                    {
+                                        language ? <HiOutlineChevronDown className='down'/>  :
+                                            <HiOutlineChevronUp className='up'/>
+                                    }
+
+                                </label>
+
+                                <div className="country-text">
+                                    <p>IT technologies</p>
+                                    <p>Business</p>
+                                    <p>Medicine</p>
+                                    <p>international Relationship</p>
+                                    <p>Tourism</p>
+                                </div>
+                            </div>
 
                         </div>
                         <div className="country-flag">
@@ -72,24 +91,28 @@ const Country = () => {
                                     <div className="img-info">
                                         <NavLink to={'/United'}><img src={america} alt=""/></NavLink>
                                         <p>America</p>
+                                        <p className='adaptation'>higher education in AMERICA</p>
                                     </div>
                                 </div>
                                 <div className="flag-info">
                                     <div className="img-info">
                                         <img src={britain} alt=""/>
                                         <p>Great Britain</p>
+                                        <p className='adaptation'>higher education in the UK</p>
                                     </div>
                                 </div>
                                 <div className="flag-info">
                                     <div className="img-info">
                                         <img src={austria} alt=""/>
                                         <p>Austria</p>
+                                        <p className='adaptation'>higher education in AUSTRALIA</p>
                                     </div>
                                 </div>
                                 <div className="flag-info">
                                     <div className="img-info">
                                         <img src={german} alt=""/>
                                         <p>Germany</p>
+                                        <p className='adaptation'>higher education in GERMANY</p>
                                     </div>
                                 </div>
 
@@ -99,12 +122,14 @@ const Country = () => {
                                     <div className="img-info">
                                         <img src={holland} alt=""/>
                                         <p>Holland</p>
+                                        <p className='adaptation'>higher education in HOLLAD</p>
                                     </div>
                                 </div>
                                 <div className="flag-info">
                                     <div className="img-info">
                                         <img src={ireland} alt=""/>
                                         <p>Ireland</p>
+                                        <p className="adaptation">higher education in IRELAND</p>
                                     </div>
 
                                 </div>
@@ -112,6 +137,7 @@ const Country = () => {
                                     <div className="img-info">
                                         <img src={spain} alt=""/>
                                         <p>Spain</p>
+                                        <p className="adaptation">higher education in SPAIN</p>
                                     </div>
 
                                 </div>
@@ -119,6 +145,7 @@ const Country = () => {
                                     <div className="img-info">
                                         <img src={italy} alt=""/>
                                         <p>Italy</p>
+                                        <p className='adaptation'>higher education in ITALY</p>
                                     </div>
 
                                 </div>
@@ -129,6 +156,7 @@ const Country = () => {
                                     <div className="img-info">
                                         <img src={canada} alt=""/>
                                         <p>Canada</p>
+                                        <p className="adaptation">higher education in CANADA</p>
                                     </div>
 
                                 </div>
@@ -136,18 +164,21 @@ const Country = () => {
                                     <div className="img-info">
                                         <img src={cyprus} alt=""/>
                                         <p>Cyprus</p>
+                                        <p className="adaptation">higher education in CUPRIS</p>
                                     </div>
                                 </div>
                                 <div className="flag-info">
                                     <div className="img-info">
                                         <img src={china} alt=""/>
                                         <p>China</p>
+                                        <p className="adaptation">higher education in China</p>
                                     </div>
                                 </div>
                                 <div className="flag-info">
                                     <div className="img-info">
                                         <img src={latvia} alt=""/>
                                         <p>Latvia</p>
+                                        <p className="adaptation">higher education in China</p>
                                     </div>
                                 </div>
                             </div>
